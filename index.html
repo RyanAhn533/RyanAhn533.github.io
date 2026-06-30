@@ -67,6 +67,8 @@
   .cov.c2{background:linear-gradient(135deg,#3a3f47,#5a6270)}
   .cov.c3{background:linear-gradient(135deg,#2f7d4f,#46a06a)}
   .cov.c4{background:linear-gradient(135deg,#9a7b3f,#bd9b57)}
+  .cov.c5{background:linear-gradient(135deg,#3b2f6b,#5b4a9e)}
+  .cov.c6{background:linear-gradient(135deg,#6b2f47,#9e4a6a)}
   .cov .demo{position:absolute;top:9px;right:10px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.5px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);padding:2px 7px;border-radius:5px}
   .card .bd{padding:16px 18px 18px}
   .card .k{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--accent2)}
@@ -188,6 +190,30 @@
       </div>
 
       <div class="card">
+        <div class="cov c5">Temporal Slot Query<span class="demo">IEEE IV 2027</span></div>
+        <div class="bd">
+          <div class="k">Research · Edge Perception (target IEEE IV 2027)</div>
+          <h3>Bio-Aware Temporal Slot Query</h3>
+          <div class="role">My role — 아키텍처 설계·구현 단독</div>
+          <p>운전자의 <b>생체신호가 외부 상황 인식을 직접 변조</b>하는 멀티모달 인식기. YOLO 검출·차선 마스크·생체·조도 토큰을 10프레임 시간창에서 <b>Slot Attention(8 슬롯, 경쟁적 바인딩)</b>으로 묶어 같은 객체를 프레임 간 쿼리로 연결한다. 핵심은 <b>Bio-Aware Gating</b> — 운전자가 스트레스 반응(EDA↑)을 보이면 게이트가 보행자·끼어들기 검출 민감도를 끌어올린다. <i>운전자 심박이 차의 눈을 돕는다.</i> 끼어들기·시야저하·보행자 돌발 등 <b>5개 외부 이벤트 + 3개 상태</b>를 동시 추정.</p>
+          <div class="mtr"><span>500K params</span><span>10Hz real-time</span><span>Jetson on-device</span></div>
+          <div class="chips"><span>Slot Attention</span><span>YOLO / YOLOPv2</span><span>Bio-modulated detection</span><span>PyTorch</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="cov c6">AU-RegionFormer<span class="demo">Q1 target</span></div>
+        <div class="bd">
+          <div class="k">Research · Facial Expression (Q1 target)</div>
+          <h3>AU-RegionFormer — Korean FER</h3>
+          <div class="role">My role — 연구 설계·구현·인간 평가 분석</div>
+          <p>한국인 표정 인식에서 <b>AI와 인간(심리학)의 감정 지각 괴리를 정량화</b>하는 FER 연구. 얼굴을 YOLO로 검출하고 MediaPipe 10개 랜드마크 영역(이마·눈·코·볼·입·턱)을 패치로 잘라 <b>AU(Action Unit) 영역 트랜스포머</b>로 학습. 연세대 <b>298명 평가자 인간 라벨링 연구</b>로 inter-rater agreement·전문가 대 일반인·연령/성별/피로 효과를 분석하고, 한국·AffectNet·CK+·SFEW·AFEW <b>교차문화 일반화</b>까지 검증했다.</p>
+          <div class="mtr"><span>AU 10-region</span><span>Yonsei 298 raters</span><span>Cross-cultural</span></div>
+          <div class="chips"><span>FER</span><span>Action Units</span><span>YOLO + MediaPipe</span><span>Human study</span></div>
+        </div>
+      </div>
+
+      <div class="card">
         <div class="cov c4">research-engine</div>
         <div class="bd">
           <div class="k">Autonomous Research Harness · Self-built</div>
@@ -227,7 +253,7 @@
       </div>
     </div>
     <figure class="fig" style="max-width:440px;margin-left:auto;margin-right:auto"><img src="assets/sgmt_overall.png" alt="SGMT overall architecture"><figcaption><b>SGMT (S-PACE Gated Multimodal Transformer)</b> — overall architecture. Video / Audio / Bio encoders → S-PACE alignment + Quality-Aware Gate → Perceiver fusion → emotion & state heads.</figcaption></figure>
-    <div class="wip"><b>진행 중</b> <span class="tag">honest status</span> &nbsp; <b>CBBF</b> 인과 생체-행동 융합 (KBS 준비) · <b>HT-DAR</b> 계층 라우팅, MOSEI 일반화 · <b>AU-RegionFormer</b> 경량 FER, 한국인 표정 연구 (Q1 타깃) · 모두 직접 만든 <b>claude-research-engine</b>으로 오케스트레이션.</div>
+    <div class="wip"><b>진행 중</b> <span class="tag">honest status</span> &nbsp; <b>HT-DAR</b> — DLF(AAAI 2025 MOSEI SOTA)의 고정 언어-앵커 가정을 깨는 동적 앵커 라우팅 융합, CMU-MOSEI·IEMOCAP·K-EmoCon 평가 · <b>CBBF</b> — "생리가 표정에 선행한다"는 인과를 cross-attention에 반영한 융합 (KBS 준비) · 모두 직접 만든 <b>claude-research-engine</b>으로 오케스트레이션.</div>
   </section>
 
   <section id="patents">
