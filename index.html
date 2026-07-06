@@ -112,6 +112,13 @@
   .tl .it::before{content:"";position:absolute;left:-21px;top:16px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--line)}
   .tl .it .h{font-size:15px;color:var(--ink);font-weight:600}
   .tl .it .d{font-size:13px;color:var(--sub)}
+  /* demo videos */
+  .vids{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .vid{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--soft)}
+  .vid iframe{width:100%;aspect-ratio:16/9;display:block;border:0}
+  .vid .cap{font-size:13px;color:var(--body);padding:10px 14px;border-top:1px solid var(--line);background:#fff}
+  .vid .cap b{color:var(--ink)}
+  @media(max-width:680px){.vids{grid-template-columns:1fr}}
   /* velocity strip */
   .vel{display:grid;grid-template-columns:repeat(7,1fr);position:relative;margin-top:10px}
   .vel::before{content:"";position:absolute;top:7px;left:7%;right:7%;height:2px;background:var(--line)}
@@ -140,7 +147,7 @@
 
 <nav><div class="in">
   <span class="nm">Junyoung Ahn</span>
-  <div class="mu"><a href="#work">Work</a><a href="#pub">Publications</a><a href="#patents">Patents</a><a href="#exp">Experience</a><a href="#contact">Contact</a></div>
+  <div class="mu"><a href="#work">Work</a><a href="#demos">Demos</a><a href="#pub">Publications</a><a href="#patents">Patents</a><a href="#exp">Experience</a><a href="#contact">Contact</a></div>
 </div></div></nav>
 
 <div class="wrap">
@@ -194,7 +201,7 @@
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
           <div class="role">My role — 멀티모달 수집 시뮬레이터 원격 구축 · 인식 아키텍처 설계 · 모델 학습/평가 · <b>Jetson AGX Thor 추론 최적화(TensorRT)</b> · AVN/HMI 차량 실증</div>
           <p>표정·음성·<b>웨어러블 생체신호</b> 융합 → 운전자 감정·상태 실시간 추정. 수집 → 인식 → 상황 판단 → 차량 HMI 응답까지 <b>풀 파이프라인을 차량 내 Jetson에서 완결</b> · 클라우드 의존 0. v1→v3 <b>Agentic DMS</b>로 진화, 온디바이스 LLM 판단 탑재.</p>
-          <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>On-device · real-time</span><span>Vision + Audio + Bio</span><span>In-vehicle 실증</span></div>
+          <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>On-device · real-time</span><span>Vision + Audio + Bio</span><a href="#demos" style="font-size:12px;font-weight:700;color:#fff;background:var(--accent);border:1px solid var(--accent);padding:3px 9px;border-radius:6px;text-decoration:none">▶ 실차 실증 영상</a></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
         </div>
       </div>
@@ -295,6 +302,41 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section id="demos">
+    <h2 class="sec">Live Demos</h2>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">말이 아니라 실구동 — 산업부 과제 시연 · <b>실차 실증</b> 영상. 수집 환경 구축부터 인식·판단·실차 검증까지 파이프라인 전 구간.</p>
+    <div class="vids">
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/U4qu2IIXH4E" title="차량 실증 1 — 시야저하·눈부심" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>차량 실증 ① 시야저하 · 눈부심</b> — 실차 주행 중 위험 상황 유도 → 운전자 상태 실시간 인식</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/GNx7Ut8AUhU" title="차량 실증 2 — 시야저하·물세례" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>차량 실증 ② 시야저하 · 물세례</b> — 실차 돌발 상황 대응 검증</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/cjJfC8ctL70" title="복합감정 인지 처리장치" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>복합감정 인지 처리장치</b> — 온디바이스 인지 파이프라인 실구동</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/SIep5uUI34Y" title="한국형 복합감정모델 시연" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>한국형 복합감정 모델</b> — 표정·음성·생체 융합 복합감정 인지 실구동</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/QTPDKme_SHw" title="감정 체계화 sLLM" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>감정 체계화 sLLM</b> — 인식 결과 → LLM 종합 판단 레이어</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/AF_blvEkPCA" title="GPU+FPGA 실시간 처리속도 시연" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>GPU + FPGA 실시간 처리</b> — 온디바이스 실시간 추론 속도 실측 시연</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/qJyZFi7HGKY" title="차량 시뮬레이터 구축" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>차량 시뮬레이터 구축</b> — 멀티모달 수집 환경 구축 (Sensing Infra 카드의 실물)</div>
+      </div>
     </div>
   </section>
 
