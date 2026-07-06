@@ -112,6 +112,16 @@
   .tl .it::before{content:"";position:absolute;left:-21px;top:16px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--line)}
   .tl .it .h{font-size:15px;color:var(--ink);font-weight:600}
   .tl .it .d{font-size:13px;color:var(--sub)}
+  /* velocity strip */
+  .vel{display:grid;grid-template-columns:repeat(7,1fr);position:relative;margin-top:10px}
+  .vel::before{content:"";position:absolute;top:7px;left:7%;right:7%;height:2px;background:var(--line)}
+  .vi{position:relative;padding:24px 6px 0;text-align:center}
+  .vi::before{content:"";position:absolute;top:2px;left:50%;transform:translateX(-50%);width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px var(--line)}
+  .vi.hot::before{background:var(--gold)}
+  .vi .vd{font-family:'Newsreader',serif;font-weight:700;font-size:14px;color:var(--accent)}
+  .vi.hot .vd{color:var(--gold)}
+  .vi .vt{font-size:11.5px;color:var(--sub);line-height:1.45;margin-top:3px}
+  @media(max-width:680px){.vel{grid-template-columns:1fr 1fr;row-gap:16px}.vel::before{display:none}}
   /* beyond */
   .beyond{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   .bx{border:1px solid var(--line);border-radius:10px;padding:15px}
@@ -139,7 +149,7 @@
     <div>
       <h1>Junyoung Ahn <span class="ko">안준영</span></h1>
       <div class="role">AI Researcher · Multimodal Affective Computing · On-Device Edge AI</div>
-      <p class="bio">표정·음성·웨어러블 생체신호 융합 → 사람의 감정·상태 인식. 멀티모달 AI를 <b>논문·특허·온디바이스 데모·앱 출시</b>까지 연결하는 실전형 AI 연구자.</p>
+      <p class="bio">표정·음성·웨어러블 생체신호 융합 → 사람의 감정·상태 인식. 멀티모달 AI를 <b>논문·특허·온디바이스 데모·앱 출시</b>까지 연결하는 실전형 AI 연구자. 통계 전공에서 <b>AI 전환 24개월</b> — SCIE 1저자·양산차 실증까지.</p>
       <div class="cta">
         <a class="pri" href="#contact">Get in touch</a>
         <a href="https://github.com/RyanAhn533" target="_blank">GitHub</a>
@@ -160,6 +170,19 @@
     <p class="lead">통계학(동국대) 출신 <b>AI Researcher</b>. 표정·음성·웨어러블 생체신호 융합 → 감정·상태 인식 모델 설계 + <b>Jetson 온디바이스 실시간 추론</b> 직접 구현. 세종대 HEART Lab · <b>산업부 차량 감성 AI R&D</b> — 데이터 수집 파이프라인 · 모델 설계 · 실시간 추론 · 실차 데모 담당. 그 성과가 <b>현대차그룹 산학협동연구 — ST1 양산차 실증(Affective Care Drive)</b>으로 이어지는 중. 석사 재학 중 <b>SCIE 1 · 특허 4 · 실차 데모</b> 완료.</p>
   </section>
 
+  <section id="velocity">
+    <h2 class="sec">Velocity — AI 전환 24개월의 궤적</h2>
+    <div class="vel">
+      <div class="vi"><div class="vd">2024.07</div><div class="vt">Bitcamp 입소<br>통계 → 코드 전환</div></div>
+      <div class="vi"><div class="vd">2025.01</div><div class="vt">HEART Lab 합류<br>수료 직후 0개월</div></div>
+      <div class="vi"><div class="vd">2025.04</div><div class="vt">첫 특허 출원<br>(누적 4건)</div></div>
+      <div class="vi"><div class="vd">2025.12</div><div class="vt">연세대 초청강연<br>→ 공동연구 제안</div></div>
+      <div class="vi hot"><div class="vd">2026.03</div><div class="vt">SCIE Q2 게재<br>1저자</div></div>
+      <div class="vi hot"><div class="vd">2026.04</div><div class="vt">현대차 산학협동<br>연구계약 체결</div></div>
+      <div class="vi hot"><div class="vd">2026.07</div><div class="vt">ST1 양산차 실증<br>중간보고 완료</div></div>
+    </div>
+  </section>
+
   <section id="work">
     <h2 class="sec">Selected Work</h2>
     <div class="grid">
@@ -167,7 +190,7 @@
       <div class="card feat">
         <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.30),rgba(18,28,48,.62)),url('assets/kmer_sim.jpg') center/cover;color:#fff">K-MER<small>FLAGSHIP</small><span class="demo">JETSON · ON-DEVICE</span></div>
         <div class="bd">
-          <div class="k">Flagship · National Driver-Emotion R&D (산업부 41.2억)</div>
+          <div class="k">Flagship · National Driver-Emotion R&D (산업부 41.2억 · 세종대 주관 6개 기관 컨소시엄)</div>
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
           <div class="role">My role — 멀티모달 수집 시뮬레이터 원격 구축 · 인식 아키텍처 설계 · 모델 학습/평가 · <b>Jetson AGX Thor 추론 최적화(TensorRT)</b> · AVN/HMI 차량 실증</div>
           <p>표정·음성·<b>웨어러블 생체신호</b> 융합 → 운전자 감정·상태 실시간 추정. 수집 → 인식 → 상황 판단 → 차량 HMI 응답까지 <b>풀 파이프라인을 차량 내 Jetson에서 완결</b> · 클라우드 의존 0. v1→v3 <b>Agentic DMS</b>로 진화, 온디바이스 LLM 판단 탑재.</p>
@@ -185,6 +208,18 @@
           <p>국가 R&D 감성 AI를 <b>현대차그룹이 산학협동연구로 실증</b> — 실증차 <b>현대 ST1 양산차</b> · 남양연구소 주행트랙. <b>Frustration(좌절) 허브 감정 체계(E0~E7)</b>로 좌절→분노·공포·무기력 전이 모델링. 6모달(얼굴·시선·음성·생체·CAN·주행행동) → Driver Risk Index → <b>HMI 3단계 개입</b>(Gentle Nudge / Active Care / Safety Alert). <b>Jetson AGX Thor</b> 온디바이스 추론 · 2026.07 중간보고 완료.</p>
           <div class="mtr"><span>현대 ST1 양산차</span><span>남양연구소 주행트랙</span><span>Jetson AGX Thor</span><span>데이터셋 40,000건 목표</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
+        </div>
+      </div>
+
+      <div class="card feat">
+        <div class="cov c7">Sensing Infra<small>DATA OWNERSHIP</small><span class="demo">타 기관 운용 중</span></div>
+        <div class="bd">
+          <div class="k">Data Infrastructure · 산업부/현대차 학습데이터 파이프라인 (연세대 협력 운용)</div>
+          <h3>멀티모달 주행 데이터 수집 시스템 <span style="font-weight:400;color:var(--sub)">— 내가 만들고, 타 기관이 쓴다</span></h3>
+          <div class="role">My role — HW 구성 · 동기화 SW 개발 · 원격 구축 · 무인 운영 자동화 · 품질 검증 전체 (infrastructure ownership)</div>
+          <p>주행 시뮬레이터 맥락에서 <b>표정·음성·생체(PPG/GSR/피부온도)·운전행동을 동기 수집</b>하는 국내 희소 인프라. RealSense·스마트워치·무선마이크를 <b>Jetson에서 프레임 단위 동기화</b>, 디지털 트리거 이벤트 마킹, <b>매일 21시 NAS 자동 백업</b>까지 무인 운영. <b>서울에서 원격으로 연세대 심리학과 시뮬레이터에 구축</b>했고, 지금은 <b>연세대 팀이 이 시스템으로 직접 수집 중</b> — 만든 사람 없이 굴러가는 파이프라인. 피험자 120명 × 20 시나리오 규모.</p>
+          <div class="mtr"><span>피험자 120명 · ≈5,000건</span><span>얼굴검출 90%+ · PPG 100%</span><span>원격 구축 · 무인 운영</span></div>
+          <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
       </div>
 
@@ -206,7 +241,7 @@
           <div class="k">Autonomous Research Harness · Self-built</div>
           <h3>자율 연구 자동화 하네스 <span style="font-weight:400;color:var(--sub)">— LLM 워커 (claude-research-engine)</span></h3>
           <div class="role">My role — 단독 설계·구현 (sole architect)</div>
-          <p>LLM = 오케스트레이터 아닌 <b>워커</b>. 연구 프로토콜을 프롬프트 아닌 <b>코드 레벨에서 강제</b> — frozen JSON schema · append-only 해시체인 로그 · hook 게이트. 가설 사전등록 → 통계 검정 → 적대적 자기검증까지 한 파이프라인. <b>재현성·무결성 구조적 보장</b>.</p>
+          <p>LLM = 오케스트레이터 아닌 <b>워커</b>. 연구 프로토콜을 프롬프트 아닌 <b>코드 레벨에서 강제</b> — frozen JSON schema · append-only 해시체인 로그 · hook 게이트. 가설 사전등록 → 통계 검정 → 적대적 자기검증까지 한 파이프라인. <b>재현성·무결성 구조적 보장</b>. 현재 HT-DAR·CBBF 등 진행 연구의 실험 운용에 <b>실사용 중</b>.</p>
           <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
           <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>RLHF / DPO</span></div>
         </div>
