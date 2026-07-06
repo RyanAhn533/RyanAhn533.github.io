@@ -77,6 +77,8 @@
   .card h3{font-size:18px;color:var(--ink);margin:5px 0 4px;font-weight:600}
   .card p{font-size:13.5px;color:var(--body);margin-bottom:10px}
   .card .role{font-size:12.5px;color:var(--gold);font-weight:600;margin-bottom:10px}
+  .demobtn{display:inline-block;margin-bottom:12px;font-size:13.5px;font-weight:700;background:var(--accent);color:#fff;padding:8px 16px;border-radius:8px;text-decoration:none}
+  .demobtn:hover{background:var(--accent2);text-decoration:none;color:#fff}
   .card .mtr{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:11px}
   .card .mtr span{font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px}
   .chips{display:flex;gap:6px;flex-wrap:wrap}
@@ -157,9 +159,10 @@
     <div>
       <h1>Junyoung Ahn <span class="ko">안준영</span></h1>
       <div class="role">AI Researcher · Multimodal Affective Computing · On-Device Edge AI</div>
-      <p class="bio">표정·음성·웨어러블 생체신호를 융합해 사람의 감정·상태를 인식한다. 멀티모달 AI를 <b>논문·특허·온디바이스 데모·앱 출시</b>까지 연결하는 실전형 AI 연구자. 통계 전공에서 <b>AI 전환 24개월</b>, SCIE 1저자와 양산차 실증까지.</p>
+      <p class="bio">표정 · 음성 · 생체신호 융합 감정인식 — 모델 설계부터 <b>양산차 온디바이스 배포</b>까지 직접<br>통계 전공, <b>AI 전환 24개월</b> — SCIE 1저자 · 특허 4건 · 현대차 실증</p>
       <div class="cta">
-        <a class="pri" href="#contact">Get in touch</a>
+        <a class="pri" href="#demos">▶ 실차 실증 영상</a>
+        <a href="#contact">Get in touch</a>
         <a href="https://github.com/RyanAhn533" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/junyoung-ahn-4692aa339" target="_blank">LinkedIn</a>
       </div>
@@ -169,13 +172,13 @@
 
   <div class="metrics">
     <div class="metric"><div class="n">41.2억</div><div class="l">산업부 차량 감성 AI 국가 R&D · 온디바이스 AI 개발 주도</div></div>
-    <div class="metric"><div class="n">현대차</div><div class="l">산학협동연구 계약 · ST1 양산차 실증 (남양연구소)</div></div>
-    <div class="metric"><div class="n">SCIE Q2</div><div class="l">1저자 게재 + 특허 4건 출원 — 석사 재학 중</div></div>
+    <div class="metric"><div class="n">현대차</div><div class="l">산학협동연구 · ST1 양산차 실증 · 남양연구소</div></div>
+    <div class="metric"><div class="n">SCIE Q2</div><div class="l">1저자 게재 · 특허 4건 출원 · 석사 재학 중</div></div>
     <div class="metric"><div class="n">5,000건</div><div class="l">멀티모달 데이터 수집 시스템 직접 구축 · 피험자 120명</div></div>
   </div>
 
   <section id="about">
-    <p class="lead">통계학(동국대) 출신 <b>AI Researcher</b>. 감정·상태 인식 모델을 설계하고 <b>Jetson 온디바이스 실시간 추론</b>까지 직접 구현한다. 세종대 HEART Lab, <b>산업부 차량 감성 AI R&D</b>에서 데이터 수집 파이프라인·모델 설계·실시간 추론·실차 데모 담당. 그 성과가 <b>현대차그룹 산학협동연구, ST1 양산차 실증</b>으로 이어지는 중. 석사 재학 중 <b>SCIE 1저자 · 특허 4건 · 실차 데모</b> 완료.</p>
+    <p class="lead">통계학(동국대) 출신 AI Researcher — 세종대 HEART Lab<br><b>산업부 차량 감성 AI R&D</b> — 데이터 파이프라인 · 모델 설계 · 온디바이스 추론 · 실차 데모 전담<br>그 결과가 <b>현대차그룹 산학협동연구 · ST1 양산차 실증</b>으로 연결<br>석사 재학 중 <b>SCIE 1저자 · 특허 4건</b></p>
   </section>
 
   <section id="velocity">
@@ -200,9 +203,10 @@
         <div class="bd">
           <div class="k">산업부 41.2억 국가 R&D · 세종대 주관 6개 기관 컨소시엄 · Flagship</div>
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
-          <div class="role">My role — 멀티모달 수집 시뮬레이터 원격 구축 · 인식 아키텍처 설계 · 모델 학습/평가 · <b>Jetson AGX Thor 추론 최적화 · TensorRT</b> · AVN/HMI 차량 실증</div>
-          <p>표정·음성·<b>웨어러블 생체신호</b>를 융합해 운전자 감정·상태를 실시간 추정한다. 수집부터 인식, 상황 판단, 차량 HMI 응답까지 <b>풀 파이프라인을 차량 내 Jetson에서 완결</b>. 클라우드 의존 0. 온디바이스 LLM 판단을 얹은 <b>Agentic DMS</b>로 진화 중.</p>
-          <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>On-device · real-time</span><span>Vision + Audio + Bio</span><a href="#demos" style="font-size:12px;font-weight:700;color:#fff;background:var(--accent);border:1px solid var(--accent);padding:3px 9px;border-radius:6px;text-decoration:none">▶ 실차 실증 영상</a></div>
+          <div class="role">My role — 수집 시뮬레이터 원격 구축 · 인식 아키텍처 설계 · 모델 학습·평가 · <b>Jetson AGX Thor 추론 최적화</b> · AVN/HMI 실차 연동</div>
+          <p>표정 · 음성 · 웨어러블 생체신호 융합, 운전자 <b>감정 6종 + 상태 4종</b> 실시간 추정<br>수집부터 인식, 판단, HMI 응답까지 <b>차량 내 Jetson 단독 처리 — 클라우드 제로</b><br>온디바이스 sLLM 판단 레이어 탑재, <b>Agentic DMS</b>로 확장 중</p>
+          <a class="demobtn" href="#demos">▶ 실차 실증 영상 보기</a>
+          <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
         </div>
       </div>
@@ -210,10 +214,10 @@
       <div class="card feat">
         <div class="cov c1">Affective Care Drive<small>HYUNDAI · ST1</small><span class="demo">산학협동연구</span></div>
         <div class="bd">
-          <div class="k">Hyundai Motor Group · 2026 미래기술공모 산학협동연구 · 국가 R&D의 사업화 실증</div>
+          <div class="k">Hyundai Motor Group · 2026 미래기술공모 산학협동연구</div>
           <h3>운전자 감정 케어 · 안전운전 연계 실차 실증 <span style="font-weight:400;color:var(--sub)">— Affective Care Drive</span></h3>
-          <div class="role">My role — 감정인식 모델 · 온디바이스 실증 시스템 개발 담당 · 실증 데모 전반</div>
-          <p>국가 R&D 감성 AI를 <b>현대차그룹이 산학협동연구로 실증</b>한다. 실증차는 <b>현대 ST1 양산차</b>, 무대는 남양연구소 주행트랙. <b>Frustration 허브 감정 체계</b>로 좌절이 분노·공포·무기력으로 번지는 전이를 모델링. 얼굴·시선·음성·생체·CAN·주행행동 <b>6개 모달리티</b>로 Driver Risk Index를 산출하고 <b>HMI가 3단계로 개입</b>한다. <b>Jetson AGX Thor</b> 온디바이스 추론. 2026.07 중간보고 완료.</p>
+          <div class="role">My role — 감정인식 모델 · 실증 시스템 개발 · 데모 제작 전반</div>
+          <p>국가 R&D 감성 AI의 <b>사업화 트랙</b> — 실증차 <b>현대 ST1 양산차</b> · 남양연구소 주행트랙<br><b>Frustration 허브 감정체계</b> — 좌절에서 분노 · 공포 · 무기력으로 번지는 전이 모델링<br>얼굴 · 시선 · 음성 · 생체 · CAN · 주행행동 <b>6모달 Driver Risk Index</b> · HMI 3단계 개입<br><b>Jetson AGX Thor</b> · 목표 데이터셋 40,000건 · 2026.07 중간보고 완료</p>
           <div class="mtr"><span>현대 ST1 양산차</span><span>남양연구소 주행트랙</span><span>Jetson AGX Thor</span><span>데이터셋 40,000건 목표</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
@@ -224,8 +228,8 @@
         <div class="bd">
           <div class="k">Data Infrastructure · 산업부·현대차 학습데이터 파이프라인 · 연세대 협력 운용</div>
           <h3>멀티모달 주행 데이터 수집 시스템 <span style="font-weight:400;color:var(--sub)">— 내가 만들고, 타 기관이 쓴다</span></h3>
-          <div class="role">My role — HW 구성 · 동기화 SW 개발 · 원격 구축 · 무인 운영 자동화 · 품질 검증 전체</div>
-          <p>주행 시뮬레이터 맥락에서 <b>표정·음성·생체(PPG/GSR/피부온도)·운전행동을 동기 수집</b>하는 국내 희소 인프라. RealSense·스마트워치·무선마이크를 <b>Jetson에서 프레임 단위 동기화</b>, 디지털 트리거 이벤트 마킹, <b>매일 21시 NAS 자동 백업</b>까지 무인 운영. <b>서울에서 원격으로 연세대 심리학과 시뮬레이터에 구축</b>했고, 지금은 <b>연세대 팀이 이 시스템으로 직접 수집 중</b> — 만든 사람 없이 굴러가는 파이프라인. 피험자 120명 × 20 시나리오 규모.</p>
+          <div class="role">My role — HW 구성부터 동기화 SW, 배포, 품질 검증까지 전 과정</div>
+          <p>표정 · 음성 · 생체 · 운전행동 <b>동기 수집</b> — 국내 희소 주행 멀티모달 인프라<br>RealSense · 스마트워치 · 무선마이크, <b>Jetson 프레임 단위 타임싱크</b><br>이벤트 트리거 마킹 · 매일 21시 NAS 자동 백업 — <b>완전 무인 운영</b><br>서울에서 <b>원격 구축</b>, 현재 <b>연세대 팀이 직접 운용</b> — 피험자 120명 × 20 시나리오</p>
           <div class="mtr"><span>피험자 120명 · ≈5,000건</span><span>얼굴검출 90%+ · PPG 100%</span><span>원격 구축 · 무인 운영</span></div>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
@@ -237,7 +241,7 @@
           <div class="k">Research · SCIE Published (MDPI Mathematics)</div>
           <h3>멀티모달 감정인식 <span style="font-weight:400;color:var(--sub)">— 생체·음성·표정 융합 (S-PACE)</span></h3>
           <div class="role">My role — 1저자 · 방법론 설계 · 전체 실험</div>
-          <p>행동·생리 신호의 시간차를 <b>cross-modal alignment</b>로 정렬하고, <b>quality-aware gating</b>으로 모달 신뢰도를 동적으로 조절해 강건한 멀티모달 감정인식을 달성. 여기서 발견한 라벨 collapse가 인과 융합 연구 CBBF로 확장됐다.</p>
+          <p>행동 · 생리 신호의 시간차, <b>cross-modal alignment</b>로 정렬<br><b>quality-aware gating</b>으로 모달 신뢰도 동적 조절<br>여기서 발견한 라벨 collapse, 인과 융합 연구 <b>CBBF</b>로 확장</p>
           <div class="mtr"><span>SCIE · Q2</span><span>Valence 93.32%</span><span>1st author</span></div>
           <div class="chips"><span>K-EmoCon</span><span>Cross-attention</span><span>Perceiver</span><span>PyTorch</span></div>
         </div>
@@ -249,7 +253,7 @@
           <div class="k">Autonomous Research Harness · Self-built</div>
           <h3>자율 연구 자동화 하네스 <span style="font-weight:400;color:var(--sub)">— LLM 워커 (claude-research-engine)</span></h3>
           <div class="role">My role — 단독 설계·구현</div>
-          <p>LLM을 오케스트레이터가 아닌 <b>워커</b>로 두는 자율연구 하네스. 연구 프로토콜을 프롬프트가 아닌 <b>코드 레벨에서 강제</b>한다. frozen JSON schema · append-only 해시체인 로그 · hook 게이트. 가설 사전등록, 통계 검정, 적대적 자기검증까지 한 파이프라인으로 <b>재현성·무결성을 구조적으로 보장</b>. 현재 HT-DAR·CBBF 등 진행 연구 실험 운용에 <b>실사용 중</b>.</p>
+          <p>LLM을 오케스트레이터가 아닌 <b>워커</b>로 두는 자율연구 하네스<br>연구 프로토콜을 프롬프트가 아닌 <b>코드 레벨에서 강제</b> — frozen schema · 해시체인 로그 · hook 게이트<br>가설 사전등록부터 통계 검정, 적대적 자기검증까지 단일 파이프라인<br>HT-DAR · CBBF 실험 운용에 <b>실사용 중</b></p>
           <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
           <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>RLHF / DPO</span></div>
         </div>
@@ -261,7 +265,7 @@
           <div class="k">Shipped Product · Social-Impact AI</div>
           <h3>발달장애인 AI 일정 도우미 앱 <span style="font-weight:400;color:var(--sub)">— (HaruMate)</span></h3>
           <div class="role">My role — 기획·설계·개발·출시 1인 완주</div>
-          <p>발달장애인·보호자·복지관 3자를 연결하는 <b>AI 일정 도우미</b>. 봉사 현장 온쿡에서 실수요를 발견해 <b>Flutter 앱으로 출시</b>했다. 연세대 사회복지대학원 강연 후 <b>해당 연구실이 먼저 공동연구를 제안</b>해 웹 프로토타입으로 확장. 외부에서 먼저 찾은 제품.</p>
+          <p>발달장애인 · 보호자 · 복지관 <b>3자 연결 AI 일정 도우미</b><br>봉사 현장 온쿡에서 발견한 실수요, <b>Flutter 앱 출시</b>로 완결<br>연세대 강연 후 <b>연구실이 먼저 공동연구 제안</b> — 외부가 먼저 찾은 제품</p>
           <div class="mtr"><span>현장 발견에서 출시까지</span><span>발달장애 접근성</span><span>외부 연구실 협업</span></div>
           <div class="chips"><span>Flutter</span><span>On-device LLM</span><span>Gemini</span><span>TTS / AAC</span></div>
         </div>
@@ -273,7 +277,7 @@
           <div class="k">Spatial AI · 서울 RISE 지역현안 (세종대 × 은평구)</div>
           <h3>AI 상권분석 기반 폐점공간 매칭·3D 팝업 설계 <span style="font-weight:400;color:var(--sub)">— (RISE)</span></h3>
           <div class="role">My role — 단독 설계·구현</div>
-          <p>한 줄 입력이면 끝. 대조시장 <b>28분기 · 79,322행</b> 상권 데이터로 청년 유입 갭을 분석하고, <b>LLM 추론으로 컨셉 공간을 설계</b>하고, <b>Neural-Symbolic 점수 체인</b>이 폐점 자리를 자동 매칭하고, <b>WebGL 3D 부스</b>로 즉시 체험시킨다. Gemini 폴백과 <b>Qwen2.5-7B 자가 호스팅</b>으로 클라우드가 끊겨도 가동률 100%. 서울 1,649개 전 상권 이식 가능.</p>
+          <p>한 줄 입력, 상권 분석부터 <b>3D 체험까지 자동</b><br><b>28분기 · 79,322행</b> 상권 데이터 갭 분석 · LLM 컨셉 설계<br><b>Neural-Symbolic 점수 체인</b> 폐점 매칭 · WebGL 3D 부스 생성<br>Gemini 폴백 + <b>Qwen2.5-7B 자가 호스팅</b> — 가동률 100% · 서울 1,649개 상권 이식 가능</p>
           <div class="mtr"><span>79,322행 상권 데이터</span><span>Neural-Symbolic 매칭</span><span>WebGL 3D · 디지털 트윈</span></div>
           <div class="chips"><span>Neural-Symbolic</span><span>Agentic Pipeline</span><span>LLM Fallback (self-hosted)</span><span>Geospatial AI</span><span>Three.js / WebGL</span></div>
         </div>
@@ -285,7 +289,7 @@
           <div class="k">Research · Edge Perception</div>
           <h3>생체신호 기반 운전 상황 인식 <span style="font-weight:400;color:var(--sub)">— Bio-Aware Slot Attention</span></h3>
           <div class="role">My role — 아키텍처 설계·구현 단독</div>
-          <p><b>생체신호가 외부 시각 인식을 직접 변조</b>하는 멀티모달 인식기. YOLO 검출·차선 마스크·생체·조도 토큰을 10프레임 <b>Slot Attention</b>으로 묶어 프레임 간 객체 쿼리를 바인딩한다. 핵심은 <b>Bio-Aware Gating</b>. 운전자 스트레스가 높아지면 보행자·끼어들기 검출 민감도가 올라간다. <i>심박이 차의 눈을 돕는다.</i> 5개 이벤트와 3개 상태 동시 추정.</p>
+          <p><b>생체신호가 외부 시각 인식을 직접 변조</b>하는 인식기<br>YOLO · 차선 · 생체 · 조도 토큰, 10프레임 <b>Slot Attention</b> 바인딩<br><b>Bio-Aware Gating</b> — 스트레스 상승 시 보행자 · 끼어들기 검출 민감도 강화<br><i>심박이 차의 눈을 돕는다</i> — 5 이벤트 + 3 상태 동시 추정</p>
           <div class="mtr"><span>500K params</span><span>10Hz real-time</span><span>Jetson on-device</span></div>
           <div class="chips"><span>Slot Attention</span><span>YOLO / YOLOPv2</span><span>Bio-modulated detection</span><span>PyTorch</span></div>
         </div>
@@ -297,7 +301,7 @@
           <div class="k">Research · Facial Expression</div>
           <h3>한국인 표정 기반 감정인식 (FER) <span style="font-weight:400;color:var(--sub)">— (AU-RegionFormer)</span></h3>
           <div class="role">My role — 연구 설계·구현·인간 평가 분석</div>
-          <p><b>AI와 인간의 감정 지각 괴리를 정량화</b>하는 FER. YOLO 얼굴 검출, MediaPipe 10영역 랜드마크 패치, <b>AU 영역 트랜스포머</b>로 구성. 연세대 <b>298명 평가자 human study</b>로 전문가·일반인 차이, 연령·성별·피로 효과까지 분석. 한국·AffectNet·CK+·SFEW·AFEW <b>교차문화 일반화</b> 검증.</p>
+          <p><b>AI와 인간의 감정 지각 괴리 정량화</b> FER<br>YOLO 검출 · MediaPipe 10영역 패치 · <b>AU 트랜스포머</b><br>연세대 <b>298명 human study</b> — 전문가 · 일반인 · 연령 · 피로 효과 분석<br>AffectNet · CK+ · SFEW · AFEW <b>교차문화 일반화</b> 검증</p>
           <div class="mtr"><span>AU 10-region</span><span>Yonsei 298 raters</span><span>Cross-cultural</span></div>
           <div class="chips"><span>FER</span><span>Action Units</span><span>YOLO + MediaPipe</span><span>Human study</span></div>
         </div>
@@ -308,7 +312,7 @@
 
   <section id="demos">
     <h2 class="sec">Live Demos</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px">말이 아니라 실구동. 수집 환경 구축부터 인식·판단·<b>실차 실증</b>까지 전 구간의 실제 시연 영상.</p>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">말이 아니라 실구동 — 수집 환경부터 <b>실차 검증</b>까지 전 구간 시연 영상</p>
     <div class="vids">
       <div class="vid">
         <iframe src="https://www.youtube-nocookie.com/embed/U4qu2IIXH4E" title="차량 실증 1 — 시야저하·눈부심" allowfullscreen loading="lazy"></iframe>
@@ -343,22 +347,22 @@
 
   <section id="eco">
     <h2 class="sec">Project Ecosystem</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px">석사 재학 중 <b>20+ 저장소</b>. 차량 엣지 AI, 멀티모달 감정인식 연구, 출시 제품 세 갈래. 위 Selected Work가 대표작.</p>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">석사 재학 중 <b>20+ 저장소</b> — 차량 엣지 AI · 감정인식 연구 · 출시 제품 세 갈래</p>
     <div class="beyond">
       <div class="bx">
         <div class="k">In-Vehicle Edge AI</div>
         <h4>K-MER lineage</h4>
-        <p><b>K-MER</b> 온디바이스 운전자 감정·상태 인식 (Jetson) · <b>K-MER Tesla</b> 2-Tier LLM 판단(룰 + 온디바이스 7B + 클라우드, 오프라인 동작) · <b>Bio-Aware Temporal Slot Query</b> 외부상황 인식 · <b>sensing-collector</b> 멀티모달 수집 파이프라인.</p>
+        <p><b>K-MER</b> 온디바이스 운전자 감정·상태 인식 · <b>K-MER Tesla</b> 2-Tier LLM 판단, 오프라인 동작 · <b>Bio-Aware Temporal Slot Query</b> 외부상황 인식 · <b>sensing-collector</b> 수집 파이프라인</p>
       </div>
       <div class="bx">
         <div class="k">Affective Computing Research</div>
         <h4>S-PACE & beyond</h4>
-        <p><b>S-PACE (SGMT)</b> SCIE 게재 · <b>HT-DAR</b> 동적 앵커 라우팅 융합 · <b>CBBF</b> 인과 생체-행동 융합 · <b>AU-RegionFormer</b> 한국형 FER · <b>SPACE-label-study</b> 라벨 관점 연구.</p>
+        <p><b>S-PACE (SGMT)</b> SCIE 게재 · <b>HT-DAR</b> 동적 앵커 라우팅 융합 · <b>CBBF</b> 인과 생체-행동 융합 · <b>AU-RegionFormer</b> 한국형 FER · <b>SPACE-label-study</b> 라벨 관점 연구</p>
       </div>
       <div class="bx">
         <div class="k">Products & Tooling</div>
         <h4>Shipped & built</h4>
-        <p><b>AI 폐점공간 재생 시스템</b> RISE 단독 개발 (neural-symbolic + WebGL 3D) · <b>HaruMate</b> 발달장애인 일정 앱 (출시) · <b>OnCook</b> AI 요리 보조 챗봇 (봉사·팀장) · <b>POPR</b> 공간 AI 설계 엔진 · <b>claude-research-engine</b> 자율연구 하네스.</p>
+        <p><b>AI 폐점공간 재생 시스템</b> RISE 단독 개발 · <b>HaruMate</b> 발달장애인 일정 앱 출시 · <b>OnCook</b> AI 요리 보조 챗봇 팀장 · <b>POPR</b> 공간 AI 설계 엔진 · <b>claude-research-engine</b> 자율연구 하네스</p>
       </div>
     </div>
   </section>
@@ -371,12 +375,12 @@
         <div class="t">SGMT with S-PACE: A Framework for Temporal Alignment and Quality-Aware Multimodal Fusion in Emotion Recognition</div>
         <div class="a"><u>Jun-Young Ahn</u>, Sathishkumar Moorthy, Yeon-kug Moon · Sejong University</div>
         <div class="a" style="color:var(--sub);font-style:italic">Mathematics 2026, 14(10), 1743 · MDPI · SCIE (Q2)</div>
-        <div class="results">K-EmoCon: Valence Acc <b>93.32%</b> · Arousal F1 <b>73.24%</b> · Quadrant <b>62.54%</b> &nbsp;|&nbsp; 행동 단서(표정·음성)를 query, 생리신호를 key로 두는 비대칭 cross-attention으로 둘의 시간차를 정렬한다.</div>
+        <div class="results">K-EmoCon: Valence Acc <b>93.32%</b> · Arousal F1 <b>73.24%</b> · Quadrant <b>62.54%</b> &nbsp;|&nbsp; 행동 단서를 query, 생리 신호를 key로 두는 비대칭 cross-attention — 두 신호의 시간차 정렬</div>
         <div class="btns"><a class="pri" href="https://www.mdpi.com/2227-7390/14/10/1743/pdf" target="_blank">PDF</a><a href="https://doi.org/10.3390/math14101743" target="_blank">DOI</a><a href="https://www.mdpi.com/2227-7390/14/10/1743" target="_blank">HTML</a><a href="https://github.com/RyanAhn533/S-PACE-multimodal-emotion-recognition" target="_blank">Code</a></div>
       </div>
     </div>
     <figure class="fig" style="max-width:440px;margin-left:auto;margin-right:auto"><img src="assets/sgmt_overall.png" alt="SGMT overall architecture"><figcaption><b>SGMT (S-PACE Gated Multimodal Transformer)</b> — overall architecture. Video / Audio / Bio encoders pass through S-PACE alignment and the Quality-Aware Gate, then Perceiver fusion feeds the emotion & state heads.</figcaption></figure>
-    <div class="wip"><b>진행 중</b> <span class="tag">honest status</span> &nbsp; <b>HT-DAR</b> — DLF(AAAI 2025 MOSEI SOTA)의 고정 언어-앵커 가정을 깨는 동적 앵커 라우팅 융합, CMU-MOSEI·IEMOCAP·K-EmoCon 평가 · <b>CBBF</b> — "생리가 표정에 선행한다"는 인과를 cross-attention에 반영한 융합 (KBS 준비) · 모두 직접 만든 <b>claude-research-engine</b>으로 오케스트레이션.</div>
+    <div class="wip"><b>진행 중</b> <span class="tag">honest status</span> &nbsp; <b>HT-DAR</b> — 고정 언어-앵커 가정을 깨는 동적 앵커 라우팅 융합, CMU-MOSEI · IEMOCAP · K-EmoCon 평가 · <b>CBBF</b> — "생리가 표정에 선행한다"는 인과를 반영한 융합, KBS 준비 · 모두 자체 제작 <b>claude-research-engine</b>으로 오케스트레이션</div>
   </section>
 
   <section id="patents">
@@ -403,9 +407,9 @@
   <section id="beyond">
     <h2 class="sec">Beyond Research</h2>
     <div class="beyond">
-      <div class="bx"><div class="k">Leadership · 6-month team lead</div><h4>Team Lead — AI Cooking Assistant (온쿡)</h4><p>서울시자원봉사센터 <b>AI 요리교실(온쿡) 팀 리드</b>. 발달장애인 대상 <b>AAC 기반 AI 셰프 챗봇</b> 직접 개발·운영, 디지털 접근성을 실제 사용자와 해결. <b>만족도 4.83/5</b> · 발달장애인 10명 참여 · LG HelloVision 협력(23개 기업 중 선정) · <b>헬로TV 뉴스 보도 · SNS 16,000회+</b>. 이 현장 경험이 HaruMate로 이어졌다.</p></div>
-      <div class="bx"><div class="k">Invited Talk · External Recognition</div><h4>Yonsei University — 초청 강연 & 연구 협업</h4><p>연세대 <b>사회복지대학원 초청 강연</b>(2025.12 · 온쿡/AI 접근성 사례). 강연 계기로 <b>해당 연구실이 먼저 공동연구를 제안</b>해 웹 프로토타입 제작. 학계 외부에서 먼저 찾은 연구자.</p></div>
-      <div class="bx"><div class="k">Founder-led Side Project</div><h4>Spatial AI — POPR</h4><p>상권·공간 데이터로 팝업 스토어를 자동 설계하는 엔진. <b>기획·아키텍처·개발 100% 본인 소유</b>, 연구 외 시간에 독립 개발 중.</p></div>
+      <div class="bx"><div class="k">Leadership · 6-month team lead</div><h4>Team Lead — AI Cooking Assistant (온쿡)</h4><p>서울시자원봉사센터 <b>AI 요리교실 팀 리드</b><br>발달장애인 대상 <b>AAC 기반 AI 셰프 챗봇</b> 개발 · 운영<br><b>만족도 4.83/5</b> · 참여 10명 · <b>헬로TV 뉴스 보도</b> · SNS 16,000+ · LG HelloVision 협력<br>이 현장 경험이 HaruMate의 출발점</p></div>
+      <div class="bx"><div class="k">Invited Talk · External Recognition</div><h4>Yonsei University — 초청 강연 & 연구 협업</h4><p>연세대 <b>사회복지대학원 초청 강연</b> 2025.12 — 온쿡 · AI 접근성 사례<br>강연 후 <b>해당 연구실이 먼저 공동연구 제안</b><br>학계 외부에서 먼저 찾은 연구자</p></div>
+      <div class="bx"><div class="k">Founder-led Side Project</div><h4>Spatial AI — POPR</h4><p>상권 · 공간 데이터 기반 <b>팝업 스토어 자동 설계 엔진</b><br><b>기획 · 아키텍처 · 개발 100% 단독 소유</b> — 연구 외 시간 독립 개발</p></div>
     </div>
   </section>
 
