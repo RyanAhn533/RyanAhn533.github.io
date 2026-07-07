@@ -199,7 +199,7 @@
     <div class="grid">
 
       <div class="card feat">
-        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.25),rgba(18,28,48,.55)),url('assets/kmer_live.jpg') center/cover;color:#fff">K-MER<small>FLAGSHIP</small><span class="demo">JETSON · ON-DEVICE</span></div>
+        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.25),rgba(18,28,48,.55)),url('assets/kmer_live.jpg') 30% center/cover;color:#fff">K-MER<small>FLAGSHIP</small><span class="demo">JETSON · ON-DEVICE</span></div>
         <div class="bd">
           <div class="k">산업부 41.2억 국가 R&D · 세종대 주관 6개 기관 컨소시엄 · Flagship</div>
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
@@ -224,7 +224,7 @@
       </div>
 
       <div class="card feat">
-        <div class="cov c7" style="background:linear-gradient(rgba(18,28,48,.35),rgba(18,28,48,.65)),url('assets/sensing_rig.jpg') center/cover;color:#fff">Sensing Infra<small>DATA OWNERSHIP</small><span class="demo">타 기관 운용 중</span></div>
+        <div class="cov c7" style="background:linear-gradient(rgba(18,28,48,.35),rgba(18,28,48,.65)),url('assets/sensing_rig.jpg') center 30%/cover;color:#fff">Sensing Infra<small>DATA OWNERSHIP</small><span class="demo">타 기관 운용 중</span></div>
         <div class="bd">
           <div class="k">Data Infrastructure · 산업부·현대차 학습데이터 파이프라인 · 연세대 협력 운용</div>
           <h3>멀티모달 주행 데이터 수집 시스템 <span style="font-weight:400;color:var(--sub)">— 내가 만들고, 타 기관이 쓴다</span></h3>
@@ -334,6 +334,17 @@
         <iframe src="https://www.youtube-nocookie.com/embed/AF_blvEkPCA" title="GPU+FPGA 실시간 처리속도 시연" allowfullscreen loading="lazy"></iframe>
         <div class="cap"><b>GPU + FPGA 실시간 처리</b> — 온디바이스 실시간 추론 속도 실측 시연</div>
       </div>
+    </div>
+  </section>
+
+  <section id="fieldnotes">
+    <h2 class="sec">Field Notes — 데이터 밑의 4개월</h2>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">피험자 120명 · 1TB+ 수집 캠페인을 원격 무중단으로 굴리며 겪은 실전 기록 — 전 과정 <a href="https://github.com/RyanAhn533/sensing-collector" target="_blank"><b>public 코드</b></a>로 증빙</p>
+    <div class="beyond">
+      <div class="bx"><div class="k">Binary Forensics</div><h4>시계가 고장난 19GB를 복구하다</h4><p>워치 RTC 붕괴, 타임스탬프 전면 무의미화 — 복구 방법 7종 연쇄 기각<br>바이너리 LOG 직접 파싱, 파서 <b>엔디언 버그 규명</b><br><b>186세션 복원</b> · 시각 동기 코드화로 재발 차단</p></div>
+      <div class="bx"><div class="k">Vendor SDK Patch</div><h4>소스 없는 SDK를 직접 고치다</h4><p>컴파일된 .pyc뿐인 SDK, 디스어셈블로 <b>USB handle leak 규명 · 직접 패치</b><br>연결이 끊겨도 유실 없는 구조로 <b>아키텍처 전환(V3)</b> — 장애를 설계로 흡수</p></div>
+      <div class="bx"><div class="k">Disaster Recovery</div><h4>81.6GB를 당일 되찾다</h4><p>클라우드 동기화 사고, 1,179개 파일 삭제 → <b>당일 전량 복구</b><br>모든 사고를 운영 절대 규칙으로 조항화 — <b>재발방지 루프 문서화</b></p></div>
+      <div class="bx"><div class="k">Unattended Ops</div><h4>만든 사람 없이 4개월 무중단</h4><p>이벤트 로그 <b>1,732건 관측 체계</b> · 카메라 스톨 자동복구<br>비전공 운용자 기준 UX 설계 — <b>타 기관이 직접 운용하는 인프라</b></p></div>
     </div>
   </section>
 
