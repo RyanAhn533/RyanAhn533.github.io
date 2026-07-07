@@ -53,7 +53,7 @@
   .lead{font-size:16px;color:var(--body)}
   .lead b{color:var(--ink);font-weight:600}
   /* projects */
-  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.18s;background:#fff}
   .card.feat{grid-column:1 / -1;display:grid;grid-template-columns:250px 1fr}
   .card.feat .cov{height:100%;min-height:170px;font-size:26px;flex-direction:column;gap:6px}
@@ -143,7 +143,7 @@
   footer .lk{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;font-size:14px;font-weight:500;margin-top:10px}
   footer .cr{font-size:12px;color:var(--sub);margin-top:22px}
   .note{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);background:#fff8e6;border:1px solid #f0d99a;color:#8a6d1f;padding:7px 16px;border-radius:999px;font-size:12px;box-shadow:0 2px 12px rgba(0,0,0,.1);z-index:30}
-  @media(max-width:680px){.hero{grid-template-columns:1fr}.pfp{order:-1;width:96px;height:96px}.metrics{grid-template-columns:1fr 1fr}.grid,.beyond{grid-template-columns:1fr}nav .mu{display:none}}
+  @media(max-width:680px){.hero{grid-template-columns:1fr}.pfp{order:-1;width:96px;height:96px}.metrics{grid-template-columns:1fr 1fr}.grid,.beyond{grid-template-columns:1fr}nav .mu{display:none}.card.feat{grid-template-columns:1fr}.card.feat .cov{min-height:180px}}
 </style>
 </head>
 <body>
@@ -203,8 +203,8 @@
         <div class="bd">
           <div class="k">산업부 41.2억 국가 R&D · 세종대 주관 6개 기관 컨소시엄 · Flagship</div>
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
-          <div class="role">My role — 수집 시뮬레이터 원격 구축 · 인식 아키텍처 설계 · 모델 학습·평가 · <b>Jetson AGX Thor 추론 최적화</b> · AVN/HMI 실차 연동</div>
-          <p>표정 · 음성 · 웨어러블 생체신호 융합, 운전자 <b>감정 6종 + 상태 4종</b> 실시간 추정<br>수집부터 인식, 판단, HMI 응답까지 <b>차량 내 Jetson 단독 처리 — 클라우드 제로</b><br>온디바이스 sLLM 판단 레이어 탑재, <b>Agentic DMS</b>로 확장 중</p>
+          <div class="role">My role — 인식 아키텍처 설계 · 모델 학습·평가 · <b>Thor 추론 최적화</b> · 실차 연동</div>
+          <p>표정 · 음성 · 생체 융합, <b>감정 6종 + 상태 4종</b> 추정<br>수집부터 HMI 응답까지 <b>Jetson 단독 — 클라우드 제로</b><br>sLLM 판단 레이어 탑재, <b>Agentic DMS</b>로 확장 중</p>
           <a class="demobtn" href="#demos">▶ 실차 실증 영상 보기</a>
           <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
@@ -212,12 +212,12 @@
       </div>
 
       <div class="card feat">
-        <div class="cov c1">Affective Care Drive<small>HYUNDAI · ST1</small><span class="demo">산학협동연구</span></div>
+        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.30),rgba(18,28,48,.55)),url('assets/hyundai_avn.jpg') center 20%/cover;color:#fff">Affective Care Drive<small>HYUNDAI · ST1</small><span class="demo">산학협동연구</span></div>
         <div class="bd">
           <div class="k">Hyundai Motor Group · 2026 미래기술공모 산학협동연구</div>
           <h3>운전자 감정 케어 · 안전운전 연계 실차 실증 <span style="font-weight:400;color:var(--sub)">— Affective Care Drive</span></h3>
           <div class="role">My role — 감정인식 모델 · 실증 시스템 개발 · 데모 제작 전반</div>
-          <p>국가 R&D 감성 AI의 <b>사업화 트랙</b> — 실증차 <b>현대 ST1 양산차</b> · 남양연구소 주행트랙<br><b>Frustration 허브 감정체계</b> — 좌절에서 분노 · 공포 · 무기력으로 번지는 전이 모델링<br>얼굴 · 시선 · 음성 · 생체 · CAN · 주행행동 <b>6모달 Driver Risk Index</b> · HMI 3단계 개입<br><b>Jetson AGX Thor</b> · 목표 데이터셋 40,000건 · 2026.07 중간보고 완료</p>
+          <p>국가 R&D의 <b>사업화 트랙</b> — <b>ST1 양산차</b> · 남양 주행트랙 실증<br><b>Frustration 허브 감정체계</b> — 복합감정 전이 모델링<br>6개 모달리티 기반 <b>Driver Risk Index</b> · HMI 3단계 개입<br><b>Jetson AGX Thor</b> · 데이터셋 40,000건 목표 · 중간보고 완료</p>
           <div class="mtr"><span>현대 ST1 양산차</span><span>남양연구소 주행트랙</span><span>Jetson AGX Thor</span><span>데이터셋 40,000건 목표</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
@@ -229,7 +229,7 @@
           <div class="k">Data Infrastructure · 산업부·현대차 학습데이터 파이프라인 · 연세대 협력 운용</div>
           <h3>멀티모달 주행 데이터 수집 시스템 <span style="font-weight:400;color:var(--sub)">— 내가 만들고, 타 기관이 쓴다</span></h3>
           <div class="role">My role — HW 구성부터 동기화 SW, 배포, 품질 검증까지 전 과정</div>
-          <p>표정 · 음성 · 생체 · 운전행동 <b>동기 수집</b> — 국내 희소 주행 멀티모달 인프라<br>RealSense · 스마트워치 · 무선마이크, <b>Jetson 프레임 단위 타임싱크</b><br>워치 RTC 붕괴까지 데이터로 복원 — 바이너리 파서 <b>엔디언 버그 규명 · 186세션 복구</b><br>이벤트 트리거 마킹 · 매일 21시 NAS 자동 백업 — <b>완전 무인 운영</b><br>서울에서 <b>원격 구축</b>, 현재 <b>연세대 팀이 직접 운용</b> — 피험자 120명 × 20 시나리오</p>
+          <p>표정 · 음성 · 생체 · 운전행동 — <b>국내 희소 동기 수집 인프라</b><br>RealSense · 워치 · 마이크, <b>Jetson 프레임 단위 타임싱크</b><br>RTC 붕괴도 복원 — <b>엔디언 버그 규명 · 186세션 복구</b><br>이벤트 마킹 · 매일 21시 NAS 백업 — <b>완전 무인 운영</b><br><b>원격 구축</b>, 연세대 팀이 직접 운용 — 피험자 120명</p>
           <div class="mtr"><span>피험자 120명 · ≈5,000건</span><span>얼굴검출 90%+ · PPG 100%</span><span>원격 구축 · 무인 운영</span></div>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
