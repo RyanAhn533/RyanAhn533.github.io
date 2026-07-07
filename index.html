@@ -340,7 +340,7 @@
   <section id="fieldnotes">
     <h2 class="sec">Field Notes — 데이터 밑의 4개월</h2>
     <p class="lead" style="font-size:14.5px;margin-bottom:18px">피험자 120명 · 1TB+ 수집 캠페인을 원격 무중단으로 굴리며 겪은 실전 기록 — 전 과정 <a href="https://github.com/RyanAhn533/sensing-collector" target="_blank"><b>public 코드</b></a>로 증빙</p>
-    <div class="beyond">
+    <div class="beyond" style="grid-template-columns:1fr 1fr">
       <div class="bx"><div class="k">Binary Forensics</div><h4>시계가 고장난 19GB를 복구하다</h4><p>워치 RTC 붕괴, 타임스탬프 전면 무의미화 — 복구 방법 7종 연쇄 기각<br>바이너리 LOG 직접 파싱, 파서 <b>엔디언 버그 규명</b><br><b>186세션 복원</b> · 시각 동기 코드화로 재발 차단</p></div>
       <div class="bx"><div class="k">Vendor SDK Patch</div><h4>소스 없는 SDK를 직접 고치다</h4><p>컴파일된 .pyc뿐인 SDK, 디스어셈블로 <b>USB handle leak 규명 · 직접 패치</b><br>연결이 끊겨도 유실 없는 구조로 <b>아키텍처 전환(V3)</b> — 장애를 설계로 흡수</p></div>
       <div class="bx"><div class="k">Disaster Recovery</div><h4>81.6GB를 당일 되찾다</h4><p>클라우드 동기화 사고, 1,179개 파일 삭제 → <b>당일 전량 복구</b><br>모든 사고를 운영 절대 규칙으로 조항화 — <b>재발방지 루프 문서화</b></p></div>
