@@ -55,7 +55,7 @@
   /* projects */
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.18s;background:#fff}
-  .card.feat{grid-column:1 / -1;display:grid;grid-template-columns:250px 1fr}
+  .card.feat{grid-column:1 / -1;display:grid;grid-template-columns:320px 1fr}
   .card.feat .cov{height:100%;min-height:170px;font-size:26px;flex-direction:column;gap:6px}
   .card.feat .cov small{font-family:'Inter';font-size:11px;font-weight:600;letter-spacing:1px;opacity:.85}
   .card.feat .bd{padding:20px 22px 22px}
@@ -199,12 +199,12 @@
     <div class="grid">
 
       <div class="card feat">
-        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.25),rgba(18,28,48,.55)),url('assets/kmer_cockpit.jpg') center 40%/cover;color:#fff">K-MER<small>FLAGSHIP</small><span class="demo">JETSON · ON-DEVICE</span></div>
+        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.25),rgba(18,28,48,.55)),url('assets/hyundai_avn.jpg') center 22%/cover;color:#fff">K-MER<small>FLAGSHIP</small><span class="demo">JETSON · ON-DEVICE</span></div>
         <div class="bd">
           <div class="k">산업부 41.2억 국가 R&D · 세종대 주관 6개 기관 컨소시엄 · Flagship</div>
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
           <div class="role">My role — 인식 아키텍처 설계 · 모델 학습·평가 · <b>Thor 추론 최적화</b> · 실차 연동</div>
-          <p>표정 · 음성 · 생체 융합, <b>감정 6종 + 상태 4종</b> 추정<br>수집부터 HMI 응답까지 <b>Jetson 단독 — 클라우드 제로</b><br>sLLM 판단 레이어 탑재, <b>Agentic DMS</b>로 확장 중</p>
+          <p>표정 · 음성 · 생체 융합, <b>감정 6종 + 상태 4종</b> 추정<br>수집부터 HMI까지 <b>Jetson 단독 — 클라우드 제로</b><br>sLLM 판단 레이어 탑재, <b>Agentic DMS</b>로 확장 중</p>
           <a class="demobtn" href="#demos">▶ 실차 실증 영상 보기</a>
           <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
@@ -212,12 +212,12 @@
       </div>
 
       <div class="card feat">
-        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.30),rgba(18,28,48,.55)),url('assets/hyundai_avn.jpg') center 20%/cover;color:#fff">Affective Care Drive<small>HYUNDAI · ST1</small><span class="demo">산학협동연구</span></div>
+        <div class="cov" style="background:#002c5f;color:#fff;letter-spacing:4px;font-size:30px">HYUNDAI<small style="letter-spacing:2px">AFFECTIVE CARE DRIVE · ST1</small><span class="demo">산학협동연구</span></div>
         <div class="bd">
           <div class="k">Hyundai Motor Group · 2026 미래기술공모 산학협동연구</div>
           <h3>운전자 감정 케어 · 안전운전 연계 실차 실증 <span style="font-weight:400;color:var(--sub)">— Affective Care Drive</span></h3>
           <div class="role">My role — 감정인식 모델 · 실증 시스템 개발 · 데모 제작 전반</div>
-          <p>국가 R&D의 <b>사업화 트랙</b> — <b>ST1 양산차</b> · 남양 주행트랙 실증<br><b>Frustration 허브 감정체계</b> — 복합감정 전이 모델링<br>6개 모달리티 기반 <b>Driver Risk Index</b> · HMI 3단계 개입<br><b>Jetson AGX Thor</b> · 데이터셋 40,000건 목표 · 중간보고 완료</p>
+          <p>국가 R&D 사업화 트랙 — <b>ST1 양산차 · 남양 실증</b><br><b>Frustration 허브 감정체계</b> — 복합감정 전이 모델링<br>6모달 <b>Driver Risk Index</b> · HMI 3단계 개입<br><b>Jetson AGX Thor</b> · 40,000건 목표 · 중간보고 완료</p>
           <div class="mtr"><span>현대 ST1 양산차</span><span>남양연구소 주행트랙</span><span>Jetson AGX Thor</span><span>데이터셋 40,000건 목표</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
@@ -229,7 +229,7 @@
           <div class="k">Data Infrastructure · 산업부·현대차 학습데이터 파이프라인 · 연세대 협력 운용</div>
           <h3>멀티모달 주행 데이터 수집 시스템 <span style="font-weight:400;color:var(--sub)">— 내가 만들고, 타 기관이 쓴다</span></h3>
           <div class="role">My role — HW 구성부터 동기화 SW, 배포, 품질 검증까지 전 과정</div>
-          <p>표정 · 음성 · 생체 · 운전행동 — <b>국내 희소 동기 수집 인프라</b><br>RealSense · 워치 · 마이크, <b>Jetson 프레임 단위 타임싱크</b><br>RTC 붕괴도 복원 — <b>엔디언 버그 규명 · 186세션 복구</b><br>이벤트 마킹 · 매일 21시 NAS 백업 — <b>완전 무인 운영</b><br><b>원격 구축</b>, 연세대 팀이 직접 운용 — 피험자 120명</p>
+          <p>표정 · 음성 · 생체 · 운전행동 — <b>동기 수집 인프라</b><br>RealSense · 워치 · 마이크 — <b>Jetson 타임싱크</b><br>RTC 붕괴 복원 — <b>엔디언 버그 · 186세션 복구</b><br>이벤트 마킹 · 21시 NAS 백업 — <b>완전 무인 운영</b><br><b>원격 구축</b>, 연세대 팀 직접 운용 — 피험자 120명</p>
           <div class="mtr"><span>피험자 120명 · ≈5,000건</span><span>얼굴검출 90%+ · PPG 100%</span><span>원격 구축 · 무인 운영</span></div>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
@@ -248,6 +248,18 @@
       </div>
 
       <div class="card">
+        <div class="cov c3">Hibuudy<span class="demo">SHIPPED</span></div>
+        <div class="bd">
+          <div class="k">봉사 팀장에서 초청 강연, 의뢰 개발까지 — Social Impact</div>
+          <h3>발달장애인 AI 일정 도우미 앱 <span style="font-weight:400;color:var(--sub)">— (HaruMate)</span></h3>
+          <div class="role">My role — 기획 · 팀장 · 개발 · 출시 · 강연 전 과정</div>
+          <p>서울청년기획봉사단 <b>기획 · 팀장</b> — AI 요리교실 온쿡<br>현장 실수요 발견 — <b>Flutter 앱 1인 출시</b><br><b>연세대 초청 강연</b> — 연구실 의뢰 웹 개발까지</p>
+          <div class="mtr"><span>만족도 4.83/5</span><span>헬로TV 보도</span><span>외부 의뢰 개발</span></div>
+          <div class="chips"><span>Flutter</span><span>On-device LLM</span><span>Gemini</span><span>TTS / AAC</span></div>
+        </div>
+      </div>
+
+      <div class="card">
         <div class="cov c4">research-engine</div>
         <div class="bd">
           <div class="k">Autonomous Research Harness · Self-built</div>
@@ -256,18 +268,6 @@
           <p>LLM을 오케스트레이터가 아닌 <b>워커</b>로 두는 자율연구 하네스<br>연구 프로토콜을 프롬프트가 아닌 <b>코드 레벨에서 강제</b> — frozen schema · 해시체인 로그 · hook 게이트<br>가설 사전등록부터 통계 검정, 적대적 자기검증까지 단일 파이프라인<br>HT-DAR · CBBF 실험 운용에 <b>실사용 중</b></p>
           <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
           <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>RLHF / DPO</span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="cov c3">Hibuudy<span class="demo">SHIPPED</span></div>
-        <div class="bd">
-          <div class="k">Shipped Product · Social-Impact AI</div>
-          <h3>발달장애인 AI 일정 도우미 앱 <span style="font-weight:400;color:var(--sub)">— (HaruMate)</span></h3>
-          <div class="role">My role — 기획·설계·개발·출시 1인 완주</div>
-          <p>발달장애인 · 보호자 · 복지관 <b>3자 연결 AI 일정 도우미</b><br>봉사 현장 온쿡에서 발견한 실수요, <b>Flutter 앱 출시</b>로 완결<br>연세대 강연 후 <b>연구실이 먼저 공동연구 제안</b> — 외부가 먼저 찾은 제품</p>
-          <div class="mtr"><span>현장 발견에서 출시까지</span><span>발달장애 접근성</span><span>외부 연구실 협업</span></div>
-          <div class="chips"><span>Flutter</span><span>On-device LLM</span><span>Gemini</span><span>TTS / AAC</span></div>
         </div>
       </div>
 
