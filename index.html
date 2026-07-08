@@ -150,7 +150,7 @@
 
 <nav><div class="in">
   <span class="nm">Junyoung Ahn</span>
-  <div class="mu"><a href="#work">Work</a><a href="#demos">Demos</a><a href="#pub">Publications</a><a href="#patents">Patents</a><a href="#exp">Experience</a><a href="#contact">Contact</a></div>
+  <div class="mu"><a href="#work">Work</a><a href="#research">Research</a><a href="#demos">Demos</a><a href="#pub">Publications</a><a href="#patents">Patents</a><a href="#exp">Experience</a><a href="#contact">Contact</a></div>
 </div></div></nav>
 
 <div class="wrap">
@@ -200,7 +200,7 @@
 
       <div class="card feat" style="grid-template-columns:1fr">
         <div style="position:relative;display:grid;grid-template-columns:1fr 1fr;background:#0b0e14">
-          <img src="assets/avn_screen.jpg" alt="실차 AVN 감정 출력" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+          <img src="assets/kmer_cabin.jpg" alt="실차 탑재 시스템 콕핏" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
           <img src="assets/kmer_ui.jpg" alt="K-MER 실시간 상태 인식 UI" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
           <span class="demo" style="position:absolute;top:9px;right:10px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.5px;color:#fff;background:rgba(31,58,95,.85);border:1px solid rgba(255,255,255,.4);padding:2px 7px;border-radius:5px">JETSON · ON-DEVICE</span>
         </div>
@@ -212,6 +212,21 @@
           <a class="demobtn" href="#demos">▶ 실차 실증 영상 보기</a>
           <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
+        </div>
+      </div>
+
+      <div class="card feat" style="grid-template-columns:1fr">
+        <div style="display:grid;grid-template-columns:1fr 1fr;background:#fff;border-bottom:1px solid var(--line)">
+          <img src="assets/sensing_sim.jpg" alt="주행 시뮬레이터 수집 환경" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+          <a href="assets/sensing_arch.png" target="_blank" style="display:block"><img src="assets/sensing_arch.png" alt="멀티모달 수집 아키텍처" style="width:100%;aspect-ratio:16/9;object-fit:contain;background:#fff;display:block"></a>
+        </div>
+        <div class="bd">
+          <div class="k">Data Infrastructure · 산업부·현대차 학습데이터 파이프라인 · 연세대 협력 운용</div>
+          <h3>120명 주행 시뮬레이터 멀티모달 데이터셋 구축 <span style="font-weight:400;color:var(--sub)">— (sensing-collector)</span></h3>
+          <div class="role">My role — HW 구성부터 동기화 SW, 배포, 품질 검증까지 전 과정</div>
+          <p>표정 · 음성 · 생체 · 운전행동 — <b>동기 수집 인프라</b><br>RealSense · 워치 · 마이크 — <b>Jetson 타임싱크</b><br>RTC 붕괴 복원 — <b>엔디언 버그 · 186세션 복구</b><br>SDK 결함 디스어셈블 <b>직접 패치</b> — 무유실 V3 전환<br>이벤트 로그 1,732건 · 21시 NAS 백업 — <b>무인 운영</b><br><b>원격 구축</b>, 연세대 팀 직접 운용 — 피험자 120명</p>
+          <div class="mtr"><span>피험자 120명 · 1TB+</span><span>얼굴검출 90%+ · PPG 100%</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
+          <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
       </div>
 
@@ -227,19 +242,36 @@
         </div>
       </div>
 
-      <div class="card feat" style="grid-template-columns:1fr">
-        <div style="display:grid;grid-template-columns:1fr 1fr;background:#fff;border-bottom:1px solid var(--line)">
-          <img src="assets/sensing_sim.jpg" alt="주행 시뮬레이터 수집 환경" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
-          <a href="assets/sensing_arch.png" target="_blank" style="display:block"><img src="assets/sensing_arch.png" alt="멀티모달 수집 아키텍처" style="width:100%;aspect-ratio:16/9;object-fit:contain;background:#fff;display:block"></a>
-        </div>
+      <div class="card feat">
+        <div class="cov c7">RISE<small>지역현안 · SOLO</small><span class="demo">DEPLOYED</span></div>
         <div class="bd">
-          <div class="k">Data Infrastructure · 산업부·현대차 학습데이터 파이프라인 · 연세대 협력 운용</div>
-          <h3>120명 주행 시뮬레이터 멀티모달 데이터셋 구축 <span style="font-weight:400;color:var(--sub)">— (sensing-collector)</span></h3>
-          <div class="role">My role — HW 구성부터 동기화 SW, 배포, 품질 검증까지 전 과정</div>
-          <p>표정 · 음성 · 생체 · 운전행동 — <b>동기 수집 인프라</b><br>RealSense · 워치 · 마이크 — <b>Jetson 타임싱크</b><br>RTC 붕괴 복원 — <b>엔디언 버그 · 186세션 복구</b><br>SDK 결함 디스어셈블 <b>직접 패치</b> — 무유실 V3 전환<br>이벤트 로그 1,732건 · 21시 NAS 백업 — <b>무인 운영</b><br><b>원격 구축</b>, 연세대 팀 직접 운용 — 피험자 120명</p>
-          <div class="mtr"><span>피험자 120명 · 1TB+</span><span>얼굴검출 90%+ · PPG 100%</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>          <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
+          <div class="k">서울시 RISE 지역현안 해결 · 세종대 × 은평구 · 기획부터 배포까지 단독</div>
+          <h3>AI 상권분석 기반 폐점공간 매칭 · 3D 팝업 설계 <span style="font-weight:400;color:var(--sub)">— (RISE)</span></h3>
+          <div class="role">My role — 단독 설계 · 구현 · 웹서비스 배포 전 과정</div>
+          <p>한 줄 입력, 상권 분석부터 <b>3D 체험까지 자동</b><br><b>28분기 · 79,322행</b> 상권 데이터 갭 분석 · LLM 컨셉 설계<br><b>Neural-Symbolic 점수 체인</b> 폐점 매칭 · WebGL 3D 부스 생성<br>Gemini 폴백 + <b>Qwen2.5-7B Self-Hosted</b> — 가동률 100%<br>서울 1,649개 전 상권 이식 가능</p>
+          <div class="mtr"><span>79,322행 상권 데이터</span><span>가동률 100%</span><span>WebGL 3D · 디지털 트윈</span></div>
+          <div class="chips"><span>Neural-Symbolic</span><span>Agentic Pipeline</span><span>Self-Hosted LLM</span><span>Geospatial AI</span><span>Three.js / WebGL</span></div>
         </div>
       </div>
+
+      <div class="card feat">
+        <div class="cov c3">HaruMate<small>SHIPPED APP</small><span class="demo">1인 출시</span></div>
+        <div class="bd">
+          <div class="k">봉사 팀장에서 초청 강연, 의뢰 개발까지 · Social Impact 트랙</div>
+          <h3>발달장애인 AI 일정 도우미 앱 <span style="font-weight:400;color:var(--sub)">— (HaruMate)</span></h3>
+          <div class="role">My role — 기획 · 팀장 · 개발 · 출시 · 강연 전 과정</div>
+          <p>서울청년기획봉사단 <b>기획 · 팀장</b> — AI 요리교실 온쿡 운영<br>현장 실수요 발견 — 발달장애인 일정 앱 <b>Flutter 1인 출시</b><br><b>연세대 사회복지대학원 초청 강연</b> — 연구실 의뢰 웹 개발<br>만족도 <b>4.83/5</b> · 헬로TV 뉴스 보도 · SNS 16,000+</p>
+          <div class="mtr"><span>만족도 4.83/5</span><span>헬로TV 보도</span><span>외부 의뢰 개발</span></div>
+          <div class="chips"><span>Flutter</span><span>On-device LLM</span><span>Gemini</span><span>TTS / AAC</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="research">
+    <h2 class="sec">Research</h2>
+    <div class="grid">
 
       <div class="card">
         <div class="cov c2">S-PACE<span class="demo">SCIE Q2</span></div>
@@ -254,18 +286,6 @@
       </div>
 
       <div class="card">
-        <div class="cov c3">Hibuudy<span class="demo">SHIPPED</span></div>
-        <div class="bd">
-          <div class="k">봉사 팀장에서 초청 강연, 의뢰 개발까지 — Social Impact</div>
-          <h3>발달장애인 AI 일정 도우미 앱 <span style="font-weight:400;color:var(--sub)">— (HaruMate)</span></h3>
-          <div class="role">My role — 기획 · 팀장 · 개발 · 출시 · 강연 전 과정</div>
-          <p>서울청년기획봉사단 <b>기획 · 팀장</b> — AI 요리교실 온쿡<br>현장 실수요 발견 — <b>Flutter 앱 1인 출시</b><br><b>연세대 초청 강연</b> — 연구실 의뢰 웹 개발까지</p>
-          <div class="mtr"><span>만족도 4.83/5</span><span>헬로TV 보도</span><span>외부 의뢰 개발</span></div>
-          <div class="chips"><span>Flutter</span><span>On-device LLM</span><span>Gemini</span><span>TTS / AAC</span></div>
-        </div>
-      </div>
-
-      <div class="card">
         <div class="cov c4">research-engine</div>
         <div class="bd">
           <div class="k">Autonomous Research Harness · Self-built</div>
@@ -274,18 +294,6 @@
           <p>LLM을 오케스트레이터가 아닌 <b>워커</b>로 두는 자율연구 하네스<br>연구 프로토콜을 프롬프트가 아닌 <b>코드 레벨에서 강제</b> — frozen schema · 해시체인 로그 · hook 게이트<br>가설 사전등록부터 통계 검정, 적대적 자기검증까지 단일 파이프라인<br>HT-DAR · CBBF 실험 운용에 <b>실사용 중</b></p>
           <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
           <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>RLHF / DPO</span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="cov c7">AI 폐점공간<span class="demo">RISE · SOLO</span></div>
-        <div class="bd">
-          <div class="k">Spatial AI · 서울 RISE 지역현안 (세종대 × 은평구)</div>
-          <h3>AI 상권분석 기반 폐점공간 매칭·3D 팝업 설계 <span style="font-weight:400;color:var(--sub)">— (RISE)</span></h3>
-          <div class="role">My role — 단독 설계·구현</div>
-          <p>한 줄 입력, 상권 분석부터 <b>3D 체험까지 자동</b><br><b>28분기 · 79,322행</b> 상권 데이터 갭 분석 · LLM 컨셉 설계<br><b>Neural-Symbolic 점수 체인</b> 폐점 매칭 · WebGL 3D 부스 생성<br>Gemini 폴백 + <b>Qwen2.5-7B 자가 호스팅</b> — 가동률 100% · 서울 1,649개 상권 이식 가능</p>
-          <div class="mtr"><span>79,322행 상권 데이터</span><span>Neural-Symbolic 매칭</span><span>WebGL 3D · 디지털 트윈</span></div>
-          <div class="chips"><span>Neural-Symbolic</span><span>Agentic Pipeline</span><span>LLM Fallback (self-hosted)</span><span>Geospatial AI</span><span>Three.js / WebGL</span></div>
         </div>
       </div>
 
