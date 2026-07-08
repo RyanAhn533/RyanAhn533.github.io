@@ -199,7 +199,7 @@
     <div class="grid">
 
       <div class="card feat">
-        <div class="cov c1" style="background:linear-gradient(rgba(18,28,48,.25),rgba(18,28,48,.55)),url('assets/hyundai_avn.jpg') center 22%/cover;color:#fff">K-MER<small>FLAGSHIP</small><span class="demo">JETSON · ON-DEVICE</span></div>
+        <div class="cov c1" style="background:#0b0e14 url('assets/kmer_ui.jpg') center/contain no-repeat"><span class="demo">JETSON · ON-DEVICE</span></div>
         <div class="bd">
           <div class="k">산업부 41.2억 국가 R&D · 세종대 주관 6개 기관 컨소시엄 · Flagship</div>
           <h3>차량 운전자 감정·상태 실시간 인식 <span style="font-weight:400;color:var(--sub)">— 온디바이스 (K-MER)</span></h3>
@@ -231,6 +231,7 @@
           <div class="role">My role — HW 구성부터 동기화 SW, 배포, 품질 검증까지 전 과정</div>
           <p>표정 · 음성 · 생체 · 운전행동 — <b>동기 수집 인프라</b><br>RealSense · 워치 · 마이크 — <b>Jetson 타임싱크</b><br>RTC 붕괴 복원 — <b>엔디언 버그 · 186세션 복구</b><br>SDK 결함 디스어셈블 <b>직접 패치</b> — 무유실 V3 전환<br>이벤트 로그 1,732건 · 21시 NAS 백업 — <b>무인 운영</b><br><b>원격 구축</b>, 연세대 팀 직접 운용 — 피험자 120명</p>
           <div class="mtr"><span>피험자 120명 · 1TB+</span><span>얼굴검출 90%+ · PPG 100%</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
+          <figure class="fig" style="margin:12px 0 0"><a href="assets/sensing_arch.png" target="_blank"><img src="assets/sensing_arch.png" alt="멀티모달 수집 시스템 아키텍처"></a><figcaption><b>수집 아키텍처</b> — RealSense · Rode · 워치, USB 3.2 + BLE로 Jetson 동기 수집 · 클릭 확대</figcaption></figure>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
       </div>
@@ -344,17 +345,17 @@
       <div class="bx">
         <div class="k">In-Vehicle Edge AI</div>
         <h4>K-MER lineage</h4>
-        <p><b>K-MER</b> 온디바이스 운전자 감정·상태 인식 · <b>K-MER Tesla</b> 2-Tier LLM 판단, 오프라인 동작 · <b>Bio-Aware Temporal Slot Query</b> 외부상황 인식 · <b>sensing-collector</b> 수집 파이프라인</p>
+        <p><b>K-MER</b> — 온디바이스 운전자 감정·상태 인식<br><b>K-MER Tesla</b> — 2-Tier LLM 판단 · 오프라인 동작<br><b>Temporal Slot Query</b> — Bio-Aware 외부상황 인식<br><b>sensing-collector</b> — 수집 파이프라인</p>
       </div>
       <div class="bx">
         <div class="k">Affective Computing Research</div>
         <h4>S-PACE & beyond</h4>
-        <p><b>S-PACE (SGMT)</b> SCIE 게재 · <b>HT-DAR</b> 동적 앵커 라우팅 융합 · <b>CBBF</b> 인과 생체-행동 융합 · <b>AU-RegionFormer</b> 한국형 FER · <b>SPACE-label-study</b> 라벨 관점 연구</p>
+        <p><b>S-PACE (SGMT)</b> — SCIE 게재 · 연구 라인의 뿌리<br><b>CBBF</b> — Causal Fusion · KBS 준비<br><b>HT-DAR</b> — Dynamic Anchor Routing<br><b>AU-RegionFormer</b> — 한국형 FER · Q1 타겟</p>
       </div>
       <div class="bx">
         <div class="k">Products & Tooling</div>
         <h4>Shipped & built</h4>
-        <p><b>AI 폐점공간 재생 시스템</b> RISE 단독 개발 · <b>HaruMate</b> 발달장애인 일정 앱 출시 · <b>OnCook</b> AI 요리 보조 챗봇 팀장 · <b>POPR</b> 공간 AI 설계 엔진 · <b>claude-research-engine</b> 자율연구 하네스</p>
+        <p><b>RISE 폐점공간 재생</b> — Neural-Symbolic · 단독<br><b>HaruMate</b> — 발달장애인 일정 앱 · 출시<br><b>OnCook</b> — AI 요리 챗봇 · 봉사 팀장<br><b>POPR</b> — Spatial AI 엔진<br><b>research-engine</b> — 자율연구 하네스</p>
       </div>
     </div>
   </section>
@@ -372,7 +373,7 @@
       </div>
     </div>
     <figure class="fig" style="max-width:440px;margin-left:auto;margin-right:auto"><img src="assets/sgmt_overall.png" alt="SGMT overall architecture"><figcaption><b>SGMT (S-PACE Gated Multimodal Transformer)</b> — overall architecture. Video / Audio / Bio encoders pass through S-PACE alignment and the Quality-Aware Gate, then Perceiver fusion feeds the emotion & state heads.</figcaption></figure>
-    <div class="wip"><b>진행 중</b> <span class="tag">honest status</span> &nbsp; <b>HT-DAR</b> — 고정 언어-앵커 가정을 깨는 동적 앵커 라우팅 융합, CMU-MOSEI · IEMOCAP · K-EmoCon 평가 · <b>CBBF</b> — "생리가 표정에 선행한다"는 인과를 반영한 융합, KBS 준비 · 모두 자체 제작 <b>claude-research-engine</b>으로 오케스트레이션</div>
+    <div class="wip"><b>진행 중</b> <span class="tag">honest status</span><br><b>HT-DAR</b> — Dynamic Anchor Routing 융합 · CMU-MOSEI · IEMOCAP · K-EmoCon 평가<br><b>CBBF</b> — Causal Bio-Behavioral Fusion · 생리가 표정에 선행한다는 인과 · KBS 준비<br>전 실험, 자체 제작 <b>claude-research-engine</b>으로 오케스트레이션</div>
   </section>
 
   <section id="patents">
