@@ -76,6 +76,11 @@
   .card.feat .k{font-size:18px;font-weight:800;margin-bottom:2px}
   .card h3{font-size:18px;color:var(--ink);margin:5px 0 4px;font-weight:600}
   .card p{font-size:13.5px;color:var(--body);margin-bottom:10px}
+  .specs{margin-bottom:11px;display:grid;grid-template-columns:max-content 1fr;column-gap:14px;row-gap:6px;font-size:13.5px;line-height:1.55}
+  .specs b{color:var(--accent2);font-weight:700;font-size:11px;letter-spacing:.6px;text-transform:uppercase;padding-top:2px}
+  .specs span{color:var(--body)}
+  .specs span b{font-size:inherit;letter-spacing:0;text-transform:none;color:var(--ink);padding:0}
+  .card.feat .specs{font-size:14px}
   .card .role{font-size:12.5px;color:var(--gold);font-weight:600;margin-bottom:10px}
   .demobtn{display:inline-block;margin-bottom:12px;font-size:13.5px;font-weight:700;background:var(--accent);color:#fff;padding:8px 16px;border-radius:8px;text-decoration:none}
   .demobtn:hover{background:var(--accent2);text-decoration:none;color:#fff}
@@ -208,7 +213,7 @@
           <div class="k">MOTIE ₩4.12B National R&D · 6-org consortium led by Sejong Univ. · Flagship</div>
           <h3>Real-time driver emotion & state recognition <span style="font-weight:400;color:var(--sub)">— on-device (K-MER)</span></h3>
           <div class="role">My role — recognition architecture · model training & evaluation · <b>Thor inference optimization</b> · in-vehicle integration</div>
-          <p>Face · voice · wearable bio fusion — <b>6 emotions + 4 states</b> in real time<br>Capture to HMI response, <b>fully on Jetson — zero cloud</b><br>On-device sLLM decision layer — evolving into <b>Agentic DMS</b></p>
+          <div class="specs"><b>Recognition</b><span>Face · voice · wearable bio — <b>6 emotions + 4 states</b>, real time</span><b>On-device</b><span>Capture to HMI response, <b>fully on Jetson — zero cloud</b></span><b>Next</b><span>On-device sLLM decision layer, evolving into <b>Agentic DMS</b></span></div>
           <a class="demobtn" href="#demos">▶ Watch in-vehicle demos</a>
           <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
@@ -224,7 +229,7 @@
           <div class="k">Data Infrastructure · training-data pipeline for the MOTIE & Hyundai projects</div>
           <h3>120-subject driving-simulator multimodal dataset <span style="font-weight:400;color:var(--sub)">— (sensing-collector)</span></h3>
           <div class="role">My role — hardware integration, sync software, deployment, QA — the whole pipeline</div>
-          <p>Face · voice · bio · driving behavior — <b>time-synced collection infrastructure</b><br>RealSense · smartwatch · wireless mic — <b>frame-level sync on Jetson</b><br>RTC failure recovered — <b>endianness bug found · 186 sessions restored</b><br>Vendor SDK defect <b>patched via disassembly</b> — lossless V3 architecture<br>1,732 event logs · nightly NAS backup — <b>unattended operation</b><br><b>Built remotely</b>, now run by the Yonsei team — 120 subjects</p>
+          <div class="specs"><b>Modalities</b><span>Face · voice · bio · driving behavior — <b>time-synced</b></span><b>Hardware</b><span>RealSense · smartwatch · wireless mic — <b>frame-level sync on Jetson</b></span><b>Recovery</b><span>RTC failure — <b>endianness bug found, 186 sessions restored</b></span><b>SDK</b><span>Vendor defect <b>patched via disassembly</b> — lossless V3 architecture</span><b>Ops</b><span>1,732 event logs · nightly NAS backup — <b>unattended</b></span><b>Handoff</b><span><b>Built remotely</b>, now run by the Yonsei team — 120 subjects</span></div>
           <div class="mtr"><span>피험자 120명 · 1TB+</span><span>얼굴검출 90%+ · PPG 100%</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
@@ -236,7 +241,7 @@
           <div class="k">Hyundai Motor Group · 2026 Future Technology Program — joint research</div>
           <h3>Driver emotion care & safe-driving intervention, on a production vehicle <span style="font-weight:400;color:var(--sub)">— Affective Care Drive</span></h3>
           <div class="role">My role — emotion recognition models · field-validation system · demo production</div>
-          <p>Commercialization track of the national R&D — <b>ST1 production vehicle · Namyang proving ground</b><br><b>Frustration-hub emotion model</b> — compound-emotion transitions<br>6-modality <b>Driver Risk Index</b> · 3-stage HMI intervention<br><b>Jetson AGX Thor</b> · 40,000-sample dataset target · interim report done</p>
+          <div class="specs"><b>Track</b><span>Commercialization of the national R&D — <b>ST1 production vehicle, Namyang proving ground</b></span><b>Model</b><span><b>Frustration-hub emotion model</b> — compound-emotion transitions</span><b>Pipeline</b><span>6-modality <b>Driver Risk Index</b> · 3-stage HMI intervention</span><b>Status</b><span><b>Jetson AGX Thor</b> · 40,000-sample target · interim report done</span></div>
           <div class="mtr"><span>Hyundai ST1</span><span>Namyang proving ground</span><span>Jetson AGX Thor</span><span>40,000-sample target</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
@@ -248,7 +253,7 @@
           <div class="k">Seoul RISE regional program · Sejong Univ. × Eunpyeong-gu · solo, end to end</div>
           <h3>AI market analysis, vacant-store matching & 3D pop-up design <span style="font-weight:400;color:var(--sub)">— (RISE)</span></h3>
           <div class="role">My role — solo design, build, and web deployment</div>
-          <p>One-line input — market analysis to <b>3D walkthrough, fully automated</b><br><b>28 quarters · 79,322 rows</b> of district data · LLM concept design<br><b>Neural-symbolic scoring chain</b> for store matching · WebGL 3D booth<br>Gemini fallback + <b>self-hosted Qwen2.5-7B</b> — 100% uptime<br>Portable to all 1,649 districts in Seoul</p>
+          <div class="specs"><b>Flow</b><span>One-line input — market analysis to <b>3D walkthrough, automated</b></span><b>Data</b><span><b>28 quarters · 79,322 rows</b> of district data · LLM concept design</span><b>Matching</b><span><b>Neural-symbolic scoring chain</b> · WebGL 3D booth</span><b>Uptime</b><span>Gemini fallback + <b>self-hosted Qwen2.5-7B</b> — 100%</span><b>Scale</b><span>Portable to all 1,649 districts in Seoul</span></div>
           <div class="mtr"><span>79,322 rows district data</span><span>100% uptime</span><span>WebGL 3D · digital twin</span></div>
           <div class="chips"><span>Neural-Symbolic</span><span>Agentic Pipeline</span><span>Self-Hosted LLM</span><span>Geospatial AI</span><span>Three.js / WebGL</span></div>
         </div>
@@ -260,7 +265,7 @@
           <div class="k">Volunteer team lead, invited talk, commissioned build · Social Impact</div>
           <h3>AI daily-planner app for developmentally disabled users <span style="font-weight:400;color:var(--sub)">— (HaruMate)</span></h3>
           <div class="role">My role — planning · team lead · development · launch · invited talk</div>
-          <p>Seoul volunteer corps <b>team lead</b> — AI cooking class OnCook<br>Real need found in the field — <b>Flutter app shipped solo</b><br><b>Invited talk at Yonsei GSSW</b> — commissioned web prototype for the lab<br><b>4.83/5</b> satisfaction · cable-news coverage · 16,000+ social reach</p>
+          <div class="specs"><b>Origin</b><span>Seoul volunteer corps <b>team lead</b> — AI cooking class OnCook</span><b>Product</b><span>Real need found in the field — <b>Flutter app shipped solo</b></span><b>Reach</b><span><b>Invited talk at Yonsei GSSW</b> — commissioned web prototype</span><b>Impact</b><span><b>4.83/5</b> satisfaction · cable-news coverage · 16,000+ reach</span></div>
           <div class="mtr"><span>4.83/5 satisfaction</span><span>Cable-news coverage</span><span>Commissioned build</span></div>
           <div class="chips"><span>Flutter</span><span>On-device LLM</span><span>Gemini</span><span>TTS / AAC</span></div>
         </div>
@@ -279,7 +284,7 @@
           <div class="k">Research · SCIE Published (MDPI Mathematics)</div>
           <h3>Multimodal emotion recognition <span style="font-weight:400;color:var(--sub)">— bio · voice · face fusion (S-PACE)</span></h3>
           <div class="role">My role — first author · method design · all experiments</div>
-          <p>Behavioral–physiological time lag, aligned via <b>cross-modal alignment</b><br><b>Quality-aware gating</b> modulates per-modality confidence<br>Label collapse found here seeded the causal follow-up, <b>CBBF</b></p>
+          <div class="specs"><b>Alignment</b><span>Behavioral–physiological time lag, <b>cross-modal alignment</b></span><b>Gating</b><span><b>Quality-aware gating</b> — per-modality confidence</span><b>Legacy</b><span>Label collapse finding seeded the causal follow-up, <b>CBBF</b></span></div>
           <div class="mtr"><span>SCIE · Q2</span><span>Valence 93.32%</span><span>1st author</span></div>
           <div class="chips"><span>K-EmoCon</span><span>Cross-attention</span><span>Perceiver</span><span>PyTorch</span></div>
         </div>
@@ -291,7 +296,7 @@
           <div class="k">Research · Causal Multimodal Fusion · Q1 journal submission planned</div>
           <h3>Causal bio-behavioral fusion <span style="font-weight:400;color:var(--sub)">— (CBBF)</span></h3>
           <div class="role">My role — solo research, design to manuscript</div>
-          <p><b>Physiology precedes expression</b> — cross-attention that respects causality<br>ANS 0.5–2s · face 1–3s · voice 2–5s — <b>time-lagged causal chain</b><br>Bio-anchored conditioning + FiLM — follow-up to the <b>S-PACE label-collapse finding</b><br>Manuscript in final stage — <b>KBS submission planned</b></p>
+          <div class="specs"><b>Causality</b><span><b>Physiology precedes expression</b> — attention respects the lag</span><b>Timing</b><span>ANS 0.5–2s · face 1–3s · voice 2–5s — <b>causal chain</b></span><b>Method</b><span>Bio-anchored conditioning + FiLM</span><b>Status</b><span>Manuscript in final stage — <b>KBS submission planned</b></span></div>
           <div class="mtr"><span>Bio-anchored Attention</span><span>KBS target</span></div>
           <div class="chips"><span>Causal Fusion</span><span>Cross-attention</span><span>FiLM</span><span>K-EmoCon · DEAP</span></div>
         </div>
@@ -303,7 +308,7 @@
           <div class="k">Autonomous Research Harness · Self-built</div>
           <h3>Autonomous research harness <span style="font-weight:400;color:var(--sub)">— LLM as worker (claude-research-engine)</span></h3>
           <div class="role">My role — sole architect</div>
-          <p>LLM as <b>worker</b>, not orchestrator<br>Protocol enforced <b>in code, not prompts</b> — frozen schemas · hash-chained logs · hook gates<br>Preregistration, statistical tests, adversarial self-verification — one pipeline<br><b>In active use</b> for HT-DAR · CBBF experiments</p>
+          <div class="specs"><b>Principle</b><span>LLM as <b>worker</b>, not orchestrator</span><b>Enforcement</b><span><b>In code, not prompts</b> — frozen schemas · hash-chained logs · hook gates</span><b>Pipeline</b><span>Preregistration · statistical tests · adversarial self-verification</span><b>Status</b><span><b>In active use</b> for HT-DAR · CBBF experiments</span></div>
           <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
           <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>RLHF / DPO</span></div>
         </div>
@@ -315,7 +320,7 @@
           <div class="k">Research · Edge Perception</div>
           <h3>Bio-aware driving-scene perception <span style="font-weight:400;color:var(--sub)">— Bio-Aware Slot Attention</span></h3>
           <div class="role">My role — solo architecture & implementation</div>
-          <p><b>Biosignals directly modulate exterior visual perception</b><br>YOLO · lane · bio · illumination tokens — 10-frame <b>Slot Attention</b> binding<br><b>Bio-aware gating</b> — stress raises pedestrian & cut-in sensitivity<br><i>The heartbeat helps the car see</i> — 5 events + 3 states jointly</p>
+          <div class="specs"><b>Idea</b><span><b>Biosignals modulate exterior visual perception</b> — <i>the heartbeat helps the car see</i></span><b>Method</b><span>YOLO · lane · bio · illumination tokens — 10-frame <b>Slot Attention</b></span><b>Gating</b><span>Stress raises pedestrian & cut-in <b>detection sensitivity</b></span><b>Output</b><span>5 events + 3 states, jointly estimated</span></div>
           <div class="mtr"><span>500K params</span><span>10Hz real-time</span><span>Jetson on-device</span></div>
           <div class="chips"><span>Slot Attention</span><span>YOLO / YOLOPv2</span><span>Bio-modulated detection</span><span>PyTorch</span></div>
         </div>
@@ -327,7 +332,7 @@
           <div class="k">Research · Facial Expression</div>
           <h3>Korean facial-expression recognition <span style="font-weight:400;color:var(--sub)">— (AU-RegionFormer)</span></h3>
           <div class="role">My role — study design · implementation · human-rater analysis</div>
-          <p><b>Quantifying the AI–human gap</b> in emotion perception<br>YOLO detection · MediaPipe 10-region patches · <b>AU transformer</b><br><b>298-rater human study</b> at Yonsei — expertise, age, fatigue effects<br>Cross-cultural validation — AffectNet · CK+ · SFEW · AFEW</p>
+          <div class="specs"><b>Question</b><span><b>Quantifying the AI–human gap</b> in emotion perception</span><b>Method</b><span>YOLO detection · MediaPipe 10-region patches · <b>AU transformer</b></span><b>Study</b><span><b>298-rater human study</b> at Yonsei — expertise · age · fatigue</span><b>Validation</b><span>Cross-cultural — AffectNet · CK+ · SFEW · AFEW</span></div>
           <div class="mtr"><span>AU 10-region</span><span>Yonsei 298 raters</span><span>Cross-cultural</span></div>
           <div class="chips"><span>FER</span><span>Action Units</span><span>YOLO + MediaPipe</span><span>Human study</span></div>
         </div>
