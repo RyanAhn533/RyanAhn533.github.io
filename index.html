@@ -4,7 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Junyoung (Ryan) Ahn — AI Researcher</title>
-<meta name="description" content="AI Researcher · Multimodal Emotion Recognition · Edge AI · Jetson Deployment">
+<meta name="description" content="Multimodal affective AI — end-to-end, from dataset construction to production-vehicle deployment. HEART Lab, Sejong University.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Junyoung (Ryan) Ahn — AI Researcher">
+<meta property="og:description" content="Multimodal affective AI — end-to-end, from dataset construction to production-vehicle deployment. MOTIE ₩4.12B R&D · Hyundai joint research · SCIE first author.">
+<meta property="og:image" content="https://ryanahn533.github.io/assets/kmer_cabin.jpg">
+<meta property="og:url" content="https://ryanahn533.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -205,8 +212,8 @@
 
       <div class="card feat" style="grid-template-columns:1fr">
         <div style="position:relative;display:grid;grid-template-columns:1fr 1fr;background:#0b0e14">
-          <img src="assets/kmer_cabin.jpg" alt="실차 탑재 시스템 콕핏" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
-          <img src="assets/kmer_ui.jpg" alt="K-MER 실시간 상태 인식 UI" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+          <img src="assets/kmer_cabin.jpg" alt="In-vehicle system cockpit" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+          <img src="assets/kmer_ui.jpg" alt="K-MER real-time driver-state UI" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
           <span class="demo" style="position:absolute;top:9px;right:10px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.5px;color:#fff;background:rgba(31,58,95,.85);border:1px solid rgba(255,255,255,.4);padding:2px 7px;border-radius:5px">JETSON · ON-DEVICE</span>
         </div>
         <div class="bd">
@@ -222,15 +229,15 @@
 
       <div class="card feat" style="grid-template-columns:1fr">
         <div style="display:grid;grid-template-columns:1fr 1fr;background:#fff;border-bottom:1px solid var(--line)">
-          <img src="assets/sensing_sim.jpg" alt="주행 시뮬레이터 수집 환경" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
-          <a href="assets/sensing_arch.png" target="_blank" style="display:block"><img src="assets/sensing_arch.png" alt="멀티모달 수집 아키텍처" style="width:100%;aspect-ratio:16/9;object-fit:contain;background:#fff;display:block"></a>
+          <img src="assets/sensing_sim.jpg" alt="Driving-simulator collection rig" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+          <a href="assets/sensing_arch.png" target="_blank" style="display:block"><img src="assets/sensing_arch.png" alt="Multimodal collection architecture" style="width:100%;aspect-ratio:16/9;object-fit:contain;background:#fff;display:block"></a>
         </div>
         <div class="bd">
           <div class="k">Data Infrastructure · training-data pipeline for the MOTIE & Hyundai projects</div>
           <h3>120-subject driving-simulator multimodal dataset <span style="font-weight:400;color:var(--sub)">— (sensing-collector)</span></h3>
           <div class="role">My role — hardware integration, sync software, deployment, QA — the whole pipeline</div>
           <div class="specs"><b>Modalities</b><span>Face · voice · bio · driving behavior — <b>time-synced</b></span><b>Hardware</b><span>RealSense · smartwatch · wireless mic — <b>frame-level sync on Jetson</b></span><b>Recovery</b><span>RTC failure — <b>endianness bug found, 186 sessions restored</b></span><b>SDK</b><span>Vendor defect <b>patched via disassembly</b> — lossless V3 architecture</span><b>Ops</b><span>1,732 event logs · nightly NAS backup — <b>unattended</b></span><b>Handoff</b><span><b>Built remotely</b>, now run by the Yonsei team — 120 subjects</span></div>
-          <div class="mtr"><span>피험자 120명 · 1TB+</span><span>얼굴검출 90%+ · PPG 100%</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
+          <div class="mtr"><span>120 subjects · 1TB+</span><span>Face detect 90%+ · PPG 100%</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Remote Deployment</span></div>
         </div>
       </div>
@@ -310,7 +317,7 @@
           <div class="role">My role — sole architect</div>
           <div class="specs"><b>Principle</b><span>LLM as <b>worker</b>, not orchestrator</span><b>Enforcement</b><span><b>In code, not prompts</b> — frozen schemas · hash-chained logs · hook gates</span><b>Pipeline</b><span>Preregistration · statistical tests · adversarial self-verification</span><b>Status</b><span><b>In active use</b> for HT-DAR · CBBF experiments</span></div>
           <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
-          <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>RLHF / DPO</span></div>
+          <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>Reproducibility</span></div>
         </div>
       </div>
 
@@ -410,10 +417,10 @@
     <h2 class="sec">Patents <span style="font-family:Inter;font-weight:400;text-transform:none;letter-spacing:0;color:var(--sub);font-size:13px;margin-left:4px">· 4 filed</span></h2>
     <table>
       <tr><th>Title</th><th>Application No.</th></tr>
-      <tr><td>멀티모달 감정 인식 및 감정 표현 생성 방법 및 그 장치</td><td class="pn">10-2025-0055652</td></tr>
-      <tr><td>멀티모달 인공지능 기반 운전자 감정 인식 시스템</td><td class="pn">10-2026-0020705</td></tr>
-      <tr><td>식물 바이오 신호를 이용한 감정 인식 시스템</td><td class="pn">10-2025-0174160</td></tr>
-      <tr><td>한국인 표정 특성을 반영한 FACS 기반 감정 인식 방법 및 시스템</td><td class="pn">10-2025-0070458</td></tr>
+      <tr><td>Multimodal emotion recognition & expression generation, method and apparatus<br><span style="font-size:12.5px;color:var(--sub)">멀티모달 감정 인식 및 감정 표현 생성 방법 및 그 장치</span></td><td class="pn">10-2025-0055652</td></tr>
+      <tr><td>Multimodal AI-based driver emotion recognition system<br><span style="font-size:12.5px;color:var(--sub)">멀티모달 인공지능 기반 운전자 감정 인식 시스템</span></td><td class="pn">10-2026-0020705</td></tr>
+      <tr><td>Emotion recognition system using plant bio-signals<br><span style="font-size:12.5px;color:var(--sub)">식물 바이오 신호를 이용한 감정 인식 시스템</span></td><td class="pn">10-2025-0174160</td></tr>
+      <tr><td>FACS-based emotion recognition reflecting Korean facial characteristics<br><span style="font-size:12.5px;color:var(--sub)">한국인 표정 특성을 반영한 FACS 기반 감정 인식 방법 및 시스템</span></td><td class="pn">10-2025-0070458</td></tr>
     </table>
   </section>
 
