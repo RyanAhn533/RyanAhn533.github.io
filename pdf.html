@@ -156,6 +156,27 @@
   footer .cr{font-size:12px;color:var(--sub);margin-top:22px}
   .note{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);background:#fff8e6;border:1px solid #f0d99a;color:#8a6d1f;padding:7px 16px;border-radius:999px;font-size:12px;box-shadow:0 2px 12px rgba(0,0,0,.1);z-index:30}
   @media(max-width:680px){.hero{grid-template-columns:1fr}.pfp{order:-1;width:96px;height:96px}.metrics{grid-template-columns:1fr 1fr}.grid,.beyond{grid-template-columns:1fr}nav .mu{display:none}.card.feat{grid-template-columns:1fr}.card.feat .cov{min-height:180px}}
+  /* ===== PDF version overrides ===== */
+  @page{size:A4;margin:9mm 8mm}
+  body{zoom:.72}
+  nav,.note{display:none}
+  html{scroll-behavior:auto}
+  .hero{padding:16px 0 8px}
+  section{padding:26px 0 6px}
+  .metrics{margin:18px 0 6px;padding:14px 0}
+  .card,.vid,.pub,.bx,.metric,.fig,.wip,.tl .it,.metrics,.vel,table tr{break-inside:avoid;page-break-inside:avoid}
+  h2.sec{break-after:avoid;page-break-after:avoid}
+  .card:hover{transform:none;box-shadow:none;border-color:var(--line)}
+  .pdfbanner{display:flex;align-items:center;gap:14px;justify-content:space-between;border:1.5px solid var(--accent);background:var(--soft);border-radius:10px;padding:8px 14px;margin-top:12px;break-inside:avoid}
+  .pdfbanner .tx{font-size:12.5px;line-height:1.5}
+  .pdfbanner .tx b{color:var(--ink)}
+  .pdfbanner .tx a{font-weight:700}
+  .pdfbanner img{width:62px;height:62px;flex-shrink:0;display:block}
+  .vthumb{position:relative;display:block}
+  .vthumb img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+  .vthumb .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:40px;background:rgba(0,0,0,.78);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;padding-left:3px}
+  .vid .cap .u{display:block;font-size:11.5px;color:var(--accent2);margin-top:2px}
+  .lbadge{position:absolute;right:8px;bottom:8px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.4px;color:#fff;background:rgba(31,58,95,.92);padding:3px 8px;border-radius:5px}
 </style>
 </head>
 <body>
@@ -167,6 +188,11 @@
 
 <div class="wrap">
 
+  <div class="pdfbanner">
+    <div class="tx"><b>PDF edition</b> — interactive version with playable demo videos: <a href="https://ryanahn533.github.io">ryanahn533.github.io</a> (scan QR) · <b>every thumbnail & button in this PDF is a clickable link</b></div>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https%3A%2F%2Fryanahn533.github.io" alt="QR — ryanahn533.github.io">
+  </div>
+
   <header class="hero">
     <div>
       <h1>Junyoung Ahn <span class="ko">안준영</span></h1>
@@ -177,7 +203,7 @@
         <a href="#contact">Get in touch</a>
         <a href="https://github.com/RyanAhn533" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/junyoung-ahn-4692aa339" target="_blank">LinkedIn</a>
-        <a href="cv.html" target="_blank">CV</a>
+        <a href="https://ryanahn533.github.io/cv.html" target="_blank">CV</a>
       </div>
     </div>
     <div class="pfp"><img src="assets/profile.jpg" alt="Junyoung Ahn"></div>
@@ -270,8 +296,8 @@
 
       <div class="card feat">
         <div class="cov" style="padding:0;flex-direction:column;background:#fff">
-          <a href="https://news.lghellovision.net/news/articleView.html?idxno=515929" target="_blank" style="width:100%;flex:1;min-height:0;display:block"><img src="assets/oncook_article2.jpg" alt="Hello TV News article" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></a>
-          <a href="https://www.youtube.com/watch?v=BobB85hZPiY" target="_blank" style="width:100%;flex:1;min-height:0;display:block"><img src="assets/oncook_news.jpg" alt="Hello TV News interview" style="width:100%;height:100%;object-fit:cover;display:block"></a>
+          <a href="https://news.lghellovision.net/news/articleView.html?idxno=515929" target="_blank" style="width:100%;flex:1;min-height:0;display:block;position:relative"><img src="assets/oncook_article2.jpg" alt="Hello TV News article" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"><span class="lbadge">ARTICLE ↗</span></a>
+          <a href="https://www.youtube.com/watch?v=BobB85hZPiY" target="_blank" style="width:100%;flex:1;min-height:0;display:block;position:relative"><img src="assets/oncook_news.jpg" alt="Hello TV News interview" style="width:100%;height:100%;object-fit:cover;display:block"><span class="lbadge">▶ WATCH ON YOUTUBE</span></a>
         </div>
         <div class="bd">
           <div class="k">Volunteer team lead, paid commission, invited talk · Social Impact</div>
@@ -355,27 +381,27 @@
 
   <section id="demos">
     <h2 class="sec">Live Demos</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle validation</b>, on video</p>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle demos</b>, on video — <b>click any thumbnail to watch</b> (links are live in this PDF)</p>
     <div class="vids">
       <div class="vid" style="grid-column:1/-1">
-        <iframe src="https://www.youtube-nocookie.com/embed/U4qu2IIXH4E" title="차량 실증 1 — 시야저하·눈부심" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>In-vehicle validation ① glare</b> — hazard induced while driving, driver state recognized in real time</div>
+        <a class="vthumb" href="https://youtu.be/U4qu2IIXH4E"><img src="https://img.youtube.com/vi/U4qu2IIXH4E/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/U4qu2IIXH4E/hqdefault.jpg'" alt="In-vehicle demo 1 — glare"><span class="play">▶</span></a>
+        <div class="cap"><b>In-vehicle demo ① glare</b> — hazard induced while driving, driver state recognized in real time<span class="u">▶ youtu.be/U4qu2IIXH4E</span></div>
       </div>
       <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/GNx7Ut8AUhU" title="차량 실증 2 — 시야저하·물세례" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>In-vehicle validation ② water splash</b> — sudden-hazard response, validated on the road</div>
+        <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg" alt="In-vehicle demo 2 — water splash"><span class="play">▶</span></a>
+        <div class="cap"><b>In-vehicle demo ② water splash</b> — sudden-hazard response, on video<span class="u">▶ youtu.be/GNx7Ut8AUhU</span></div>
       </div>
       <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/SIep5uUI34Y" title="한국형 복합감정모델 시연" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live</div>
+        <a class="vthumb" href="https://youtu.be/SIep5uUI34Y"><img src="https://img.youtube.com/vi/SIep5uUI34Y/hqdefault.jpg" alt="Korean compound-emotion model demo"><span class="play">▶</span></a>
+        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
       </div>
       <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/QTPDKme_SHw" title="감정 체계화 sLLM" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>Emotion-structuring sLLM</b> — LLM layer reasoning over recognition outputs</div>
+        <a class="vthumb" href="https://youtu.be/QTPDKme_SHw"><img src="https://img.youtube.com/vi/QTPDKme_SHw/hqdefault.jpg" alt="Emotion-structuring sLLM demo"><span class="play">▶</span></a>
+        <div class="cap"><b>Emotion-structuring sLLM</b> — LLM layer reasoning over recognition outputs<span class="u">▶ youtu.be/QTPDKme_SHw</span></div>
       </div>
       <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/AF_blvEkPCA" title="GPU+FPGA 실시간 처리속도 시연" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured</div>
+        <a class="vthumb" href="https://youtu.be/AF_blvEkPCA"><img src="https://img.youtube.com/vi/AF_blvEkPCA/hqdefault.jpg" alt="GPU + FPGA real-time processing demo"><span class="play">▶</span></a>
+        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
       </div>
     </div>
   </section>
