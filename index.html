@@ -170,7 +170,7 @@
   <header class="hero">
     <div>
       <h1>Junyoung Ahn <span class="ko">안준영</span></h1>
-      <div class="role">AI Researcher · Multimodal Affective Computing · On-Device Edge AI</div>
+      <div class="role">AI Researcher · Vehicle Edge AI · Driver Monitoring · Multimodal Affective Computing</div>
       <p class="bio">Multimodal affective AI — <b>end-to-end</b>, from dataset construction to <b>in-vehicle system deployment</b></p>
       <div class="cta">
         <a class="pri" href="#demos">▶ In-Vehicle Demos</a>
@@ -191,7 +191,7 @@
   </div>
 
   <section id="about">
-    <p class="lead">Statistics-trained AI researcher — HEART Lab, Sejong University<br><b>MOTIE driver-emotion R&D</b> — full-stack ownership, data pipeline to in-vehicle validation<br>Extended into <b>Hyundai Motor · Kia joint research — ST1 installation & HMI integration</b><br>Multimodal recognition · on-device deployment · shipped products</p>
+    <p class="lead">Statistics-trained AI researcher — HEART Lab, Sejong University<br><b>MOTIE driver-emotion R&D</b> — full-stack ownership, data pipeline to in-vehicle validation<br>Extended into <b>Hyundai Motor · Kia joint research — ST1 installation & HMI integration</b><br>Multimodal recognition · on-device deployment · deployed systems and prototypes</p>
   </section>
 
   <section id="velocity">
@@ -221,13 +221,38 @@
         <div class="bd">
           <div class="k">MOTIE ₩4.12B National R&D · 6-org consortium led by Sejong Univ. · Flagship</div>
           <h3>Real-time driver emotion & state recognition <span style="font-weight:400;color:var(--sub)">— on-device (K-MER)</span></h3>
-          <div class="role">My role — recognition architecture · model training & evaluation · <b>Thor inference optimization</b> · in-vehicle integration</div>
+          <div class="role">My role — recognition architecture · model training & evaluation · <b>Jetson inference optimization (Orin NX → AGX Thor)</b> · in-vehicle integration</div>
           <div class="specs"><b>Recognition</b><span>Face · voice · wearable bio — <b>6 emotions + 4 states</b>, real time</span><b>On-device</b><span>Capture to HMI response, <b>fully on Jetson — zero cloud</b></span><b>Next</b><span>On-device sLLM decision layer, evolving into <b>Agentic DMS</b></span></div>
           <a class="demobtn" href="#demos">▶ Watch in-vehicle demos</a>
-          <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
+          <div class="mtr"><span>Jetson Orin NX → AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <section id="demos">
+    <h2 class="sec">Live Demos</h2>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle demos</b>, on video</p>
+    <div class="vids">
+      <div class="vid" style="grid-column:1/-1">
+        <iframe src="https://www.youtube-nocookie.com/embed/GNx7Ut8AUhU" title="차량 실증 — 시야저하·물세례" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>In-vehicle hazard-response demo — water splash</b> — driver state recognized in real time while driving · fully on-device, zero cloud</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/SIep5uUI34Y" title="한국형 복합감정모델 시연" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/AF_blvEkPCA" title="GPU+FPGA 실시간 처리속도 시연" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="grid">
 
       <div class="card feat" style="grid-template-columns:1fr">
         <div style="display:grid;grid-template-columns:1fr 1fr;background:#fff;border-bottom:1px solid var(--line)">
@@ -238,7 +263,7 @@
           <div class="k">Data Infrastructure · training-data pipeline for the MOTIE & Hyundai projects</div>
           <h3>144-participant driving-simulator data campaign <span style="font-weight:400;color:var(--sub)">— sensing & validation pipeline (sensing-collector)</span></h3>
           <div class="role">My role — multimodal sensing architecture · time synchronization · deployment · quality validation</div>
-          <div class="specs"><b>Modalities</b><span>Face · voice · PPG · EDA · skin temperature · driving signals</span><b>Pipeline</b><span>Collection · synchronization · storage · validation · <b>quality-graded release</b></span><b>QA</b><span>File & device-log analysis · <b>24 alignment methods evaluated</b> · duplicated biosignal files detected and isolated</span><b>Recovery</b><span><b>186 damaged raw sessions recovered</b> through storage-structure analysis and conversion tooling</span><b>Yield</b><span><b>144 participants · 132 valid driving sessions</b> · 519 emotion events · <b>87-person unified dataset</b></span><b>Release</b><span>Per-signal alignment grade & provenance documented for downstream analysis</span></div>
+          <div class="specs"><b>Modalities</b><span>Face · voice · PPG · EDA · skin temperature · driving signals</span><b>Pipeline</b><span>Collection · synchronization · storage · validation · <b>quality-graded release</b></span><b>QA</b><span>File & device-log analysis · <b>24 alignment methods evaluated</b> · duplicated biosignal files detected and isolated</span><b>Recovery</b><span><b>186 proprietary binary sessions decoded and converted</b> through storage-structure analysis</span><b>Yield</b><span><b>144 participants · 132 valid driving sessions</b> · 519 emotion events · <b>87-person unified dataset</b></span><b>Release</b><span>Per-signal alignment grade & provenance documented for downstream analysis</span></div>
           <div class="mtr"><span>144 participants · 1TB+</span><span>Quality-graded release</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
           <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Quality Validation</span></div>
         </div>
@@ -250,8 +275,8 @@
           <div class="k">Hyundai Motor Company · Kia — 2026 Future Technology Program, joint research</div>
           <h3>Driver emotion care & safe-driving intervention, on a production vehicle <span style="font-weight:400;color:var(--sub)">— Affective Care Drive</span></h3>
           <div class="role">My role — multimodal risk model · HMI intervention pipeline · ST1 integration</div>
-          <div class="specs"><b>Track</b><span>Commercialization of the national R&D — <b>system installed on Hyundai ST1</b></span><b>Model</b><span><b>Frustration-hub emotion model</b> — compound-emotion transitions</span><b>Pipeline</b><span>6-modality <b>Driver Risk Index</b> · 3-stage HMI intervention</span><b>Status</b><span>Model architecture & ST1 integration <b>presented at the interim review</b> · Jetson AGX Thor</span><b>Next</b><span>Driving validation planned at <b>Namyang Proving Ground</b> · 40,000-sample target</span></div>
-          <div class="mtr"><span>Hyundai ST1</span><span>Jetson AGX Thor</span><span>Namyang validation planned</span><span>40,000-sample target</span></div>
+          <div class="specs"><b>Track</b><span>Vehicle application of the national R&D platform — <b>system installed on Hyundai ST1</b></span><b>Model</b><span><b>Frustration-hub emotion model</b> — compound-emotion transitions</span><b>Pipeline</b><span>6-modality <b>Driver Risk Index</b> · 3-stage HMI intervention</span><b>Status</b><span>Model architecture & ST1 integration <b>presented at the interim review</b> · Jetson AGX Thor</span><b>Next</b><span>Driving validation planned at <b>Namyang Proving Ground</b></span></div>
+          <div class="mtr"><span>Hyundai ST1</span><span>Jetson AGX Thor</span><span>Namyang validation planned</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
       </div>
@@ -259,9 +284,9 @@
       <div class="card feat">
         <div class="cov" style="background:#fff url('assets/rise_visual.jpg') center/contain no-repeat"><span class="demo" style="background:rgba(31,58,95,.88);border-color:rgba(31,58,95,.9)">DEPLOYED</span></div>
         <div class="bd">
-          <div class="k">Seoul RISE regional program · Sejong Univ. × Eunpyeong-gu · solo, end to end</div>
+          <div class="k">Seoul RISE regional program · Sejong Univ. × Eunpyeong-gu</div>
           <h3>AI market analysis, vacant-store matching & 3D pop-up design <span style="font-weight:400;color:var(--sub)">— (RISE)</span></h3>
-          <div class="role">My role — solo design, build, and web deployment</div>
+          <div class="role">My role — sole developer for system design, build, and web deployment</div>
           <div class="specs"><b>LLM</b><span>Cloud LLM with <b>automatic fallback to self-hosted Qwen2.5-7B-Instruct</b></span><b>Forecast</b><span><b>SARIMA · Holt-Winters · OLS fallback chain</b> — 28 quarters · 79,322 rows</span><b>Matching</b><span>Business & physical-condition-based <b>Top-3 vacant-store recommendation</b></span><b>3D</b><span>Generative imagery · <b>Three.js/WebGL spatial visualization</b></span><b>Result</b><span><b>Uninterrupted live demonstration</b> to district officials and merchant representatives</span></div>
           <div class="mtr"><span>Self-hosted Qwen2.5-7B</span><span>Automatic LLM fallback</span><span>Three.js / WebGL 3D</span></div>
           <div class="chips"><span>LLM Inference</span><span>Neural-Symbolic</span><span>Time-series Forecasting</span><span>Agentic Pipeline</span><span>Geospatial AI</span><span>Three.js / WebGL</span></div>
@@ -303,30 +328,6 @@
       </div>
 
       <div class="card">
-        <div class="cov c1">CBBF<span class="demo">KBS TARGET</span></div>
-        <div class="bd">
-          <div class="k">Research · Causal Multimodal Fusion · Q1 journal submission planned</div>
-          <h3>Causal bio-behavioral fusion <span style="font-weight:400;color:var(--sub)">— (CBBF)</span></h3>
-          <div class="role">My role — solo research, design to manuscript</div>
-          <div class="specs"><b>Causality</b><span><b>Physiology precedes expression</b> — attention respects the lag</span><b>Timing</b><span>ANS 0.5–2s · face 1–3s · voice 2–5s — <b>causal chain</b></span><b>Method</b><span>Bio-anchored conditioning + FiLM</span><b>Status</b><span>Manuscript in final stage — submission planned to <b>Knowledge-Based Systems (KBS)</b></span></div>
-          <div class="mtr"><span>Bio-anchored Attention</span><span>KBS target</span></div>
-          <div class="chips"><span>Causal Fusion</span><span>Cross-attention</span><span>FiLM</span><span>K-EmoCon · DEAP</span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="cov c4">research-engine</div>
-        <div class="bd">
-          <div class="k">Autonomous Research Harness · Self-built</div>
-          <h3>Autonomous research harness <span style="font-weight:400;color:var(--sub)">— LLM as worker (claude-research-engine)</span></h3>
-          <div class="role">My role — sole architect</div>
-          <div class="specs"><b>Principle</b><span>LLM as <b>worker</b>, not orchestrator</span><b>Enforcement</b><span><b>In code, not prompts</b> — frozen schemas · hash-chained logs · hook gates</span><b>Pipeline</b><span>Preregistration · statistical tests · adversarial self-verification</span><b>Status</b><span><b>In active use</b> — HT-DAR · CBBF experiments · persona-debate workflow used for a real client build</span></div>
-          <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
-          <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>Reproducibility</span></div>
-        </div>
-      </div>
-
-      <div class="card">
         <div class="cov c5">Temporal Slot Query</div>
         <div class="bd">
           <div class="k">Research · Edge Perception</div>
@@ -350,39 +351,36 @@
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="card">
+        <div class="cov c1">CBBF</div>
+        <div class="bd">
+          <div class="k">Research · Causal Multimodal Fusion · submission in preparation</div>
+          <h3>Causal bio-behavioral fusion <span style="font-weight:400;color:var(--sub)">— (CBBF)</span></h3>
+          <div class="role">My role — solo research, design to manuscript</div>
+          <div class="specs"><b>Causality</b><span><b>Physiology precedes expression</b> — attention respects the lag</span><b>Timing</b><span>ANS 0.5–2s · face 1–3s · voice 2–5s — <b>causal chain</b></span><b>Method</b><span>Bio-anchored conditioning + FiLM</span><b>Status</b><span>Manuscript in final stage — submission planned to <b>Knowledge-Based Systems (KBS)</b></span></div>
+          <div class="mtr"><span>Bio-anchored Attention</span></div>
+          <div class="chips"><span>Causal Fusion</span><span>Cross-attention</span><span>FiLM</span><span>K-EmoCon · DEAP</span></div>
+        </div>
+      </div>
 
-  <section id="demos">
-    <h2 class="sec">Live Demos</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle demos</b>, on video</p>
-    <div class="vids">
-      <div class="vid" style="grid-column:1/-1">
-        <iframe src="https://www.youtube-nocookie.com/embed/GNx7Ut8AUhU" title="차량 실증 — 시야저하·물세례" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>In-vehicle demo ① water splash</b> — sudden-hazard response, driver state recognized in real time</div>
+      <div class="card">
+        <div class="cov c4">research-engine</div>
+        <div class="bd">
+          <div class="k">Autonomous Research Harness · Self-built</div>
+          <h3>Autonomous research harness <span style="font-weight:400;color:var(--sub)">— LLM as worker (claude-research-engine)</span></h3>
+          <div class="role">My role — sole architect</div>
+          <div class="specs"><b>Principle</b><span>LLM as <b>worker</b>, not orchestrator</span><b>Enforcement</b><span><b>In code, not prompts</b> — frozen schemas · hash-chained logs · hook gates</span><b>Pipeline</b><span>Preregistration · statistical tests · adversarial self-verification</span><b>Status</b><span><b>In active use</b> — HT-DAR · CBBF experiments · persona-debate workflow used for a real client build</span></div>
+          <div class="mtr"><span>8 frozen schemas</span><span>16-phase FSM</span><span>Hash-chained ledger</span></div>
+          <div class="chips"><span>Agentic Pipeline</span><span>Protocol-enforced</span><span>JSON Schema</span><span>Reproducibility</span></div>
+        </div>
       </div>
-      <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/U4qu2IIXH4E" title="차량 실증 — 시야저하·눈부심" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>In-vehicle demo ② glare</b> — hazard induced while driving, on video</div>
-      </div>
-      <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/SIep5uUI34Y" title="한국형 복합감정모델 시연" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live</div>
-      </div>
-      <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/QTPDKme_SHw" title="감정 체계화 sLLM" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>Emotion-structuring sLLM</b> — LLM layer reasoning over recognition outputs</div>
-      </div>
-      <div class="vid">
-        <iframe src="https://www.youtube-nocookie.com/embed/AF_blvEkPCA" title="GPU+FPGA 실시간 처리속도 시연" allowfullscreen loading="lazy"></iframe>
-        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured</div>
-      </div>
+
     </div>
   </section>
 
   <section id="eco">
     <h2 class="sec">Project Ecosystem</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px"><b>20+ repositories</b> during the master's — vehicle edge AI · affective computing research · shipped products</p>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px"><b>20+ repositories</b> during the master's — vehicle edge AI · affective computing research · deployed systems & prototypes</p>
     <div class="beyond">
       <div class="bx">
         <div class="k">In-Vehicle Edge AI</div>
@@ -392,11 +390,11 @@
       <div class="bx">
         <div class="k">Affective Computing Research</div>
         <h4>S-PACE & beyond</h4>
-        <p><b>S-PACE (SGMT)</b> — SCIE published · root of the line<br><b>CBBF</b> — causal fusion · KBS target<br><b>HT-DAR</b> — dynamic anchor routing<br><b>AU-RegionFormer</b> — Korean FER · Q1 target</p>
+        <p><b>S-PACE (SGMT)</b> — SCIE published · root of the line<br><b>CBBF</b> — causal fusion · in preparation<br><b>HT-DAR</b> — dynamic anchor routing<br><b>AU-RegionFormer</b> — Korean FER · 298-rater study</p>
       </div>
       <div class="bx">
         <div class="k">Products & Tooling</div>
-        <h4>Shipped & built</h4>
+        <h4>Deployed & built</h4>
         <p><b>RISE</b> — vacant-store regeneration · neural-symbolic · solo<br><b>HaruMate</b> — daily-planner app · closed beta<br><b>OnCook</b> — AI cooking chatbot · team lead<br><b>POPR</b> — spatial AI engine<br><b>research-engine</b> — autonomous research harness</p>
       </div>
     </div>
@@ -409,7 +407,7 @@
       <div class="bd">
         <div class="t">SGMT with S-PACE: A Framework for Temporal Alignment and Quality-Aware Multimodal Fusion in Emotion Recognition</div>
         <div class="a"><u>Jun-Young Ahn</u>, Sathiyamoorthi Arthanari, Sathishkumar Moorthy, Yeon-Kug Moon · Sejong University</div>
-        <div class="a" style="color:var(--sub);font-style:italic">Mathematics 2026, 14(10), 1743 · MDPI · SCIE (Q1, JCR 2024)</div>
+        <div class="a" style="color:var(--sub);font-style:italic">Mathematics 2026, 14(10), 1743 · MDPI · SCIE · JCR Q1 (Mathematics)</div>
         <div class="results">K-EmoCon: Valence Acc <b>93.32%</b> · Arousal F1 <b>73.24%</b> · Quadrant <b>62.54%</b> &nbsp;|&nbsp; Behavioral cues as query, physiology as key — asymmetric cross-attention aligning their time lag</div>
         <div class="btns"><a class="pri" href="https://www.mdpi.com/2227-7390/14/10/1743/pdf" target="_blank">PDF</a><a href="https://doi.org/10.3390/math14101743" target="_blank">DOI</a><a href="https://www.mdpi.com/2227-7390/14/10/1743" target="_blank">HTML</a><a href="https://github.com/RyanAhn533/S-PACE-multimodal-emotion-recognition" target="_blank">Code</a></div>
       </div>
