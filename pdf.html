@@ -182,8 +182,10 @@
   .vthumb .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:40px;background:rgba(0,0,0,.78);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;padding-left:3px}
   .vid .cap .u{display:block;font-size:11.5px;color:var(--accent2);margin-top:2px}
   .lbadge{position:absolute;right:8px;bottom:8px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.4px;color:#fff;background:rgba(31,58,95,.92);padding:3px 8px;border-radius:5px}
-  #demos,#research,#eco{break-before:page;page-break-before:always}
+  #demos,#datacamp{break-before:page;page-break-before:always}
   .gh{break-after:avoid;page-break-after:avoid}
+  h2.sec{font-size:19px;letter-spacing:2px;margin-bottom:16px}
+  .gh{font-size:15px;letter-spacing:1px}
   #demos{padding:14px 0 0}
   #demos .vids{gap:18px}
   #demos .vthumb{overflow:hidden}
@@ -193,7 +195,10 @@
   #demos .carla img{transform:scale(1.34)}
   #demos,#research,#eco{padding-top:14px}
   #research{zoom:.92}
-  #demos{zoom:.96}
+  #demos{zoom:1.32;padding-top:0}
+  #demos .gh{margin:14px 0 12px}
+  #demos .vthumb img{aspect-ratio:4/3}
+  #demos .vids{gap:16px}
   footer{margin:18px 0 0;padding-top:14px;break-inside:avoid;page-break-inside:avoid}
   footer .cr{margin-top:10px}
 </style>
@@ -276,12 +281,9 @@
       </div>
 
     </div>
-  </section>
 
-  <section id="demos">
-    <h2 class="sec">Live Demos</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:10px">Not claims — running systems, grouped by project — <b>click any thumbnail to watch</b> (links are live in this PDF)</p>
-    <div class="gh">① MOTIE National R&D — in-vehicle & on-device</div>
+    <div id="demos">
+    <div class="gh">① MOTIE National R&D — live demos <span style="font-weight:600;text-transform:none;letter-spacing:0;color:var(--sub);font-size:12.5px">· click any thumbnail to watch</span></div>
     <div class="vids">
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg" style="aspect-ratio:4/3" alt="In-vehicle hazard-response demo — water splash"><span class="play">▶</span></a>
@@ -292,40 +294,31 @@
         <div class="cap"><b>In-vehicle hazard demo — glare</b> — hazard induced while driving, on video<span class="u">▶ youtu.be/U4qu2IIXH4E</span></div>
       </div>
     </div>
-    <div class="vids" style="grid-template-columns:1fr 1fr 1fr;margin-top:18px">
+    <div class="vids" style="margin-top:16px">
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/SIep5uUI34Y"><img src="https://img.youtube.com/vi/SIep5uUI34Y/hqdefault.jpg" alt="Korean compound-emotion model demo"><span class="play">▶</span></a>
-        <div class="cap"><b>Compound-emotion model</b> — face · voice · bio, live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
+        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/QTPDKme_SHw"><img src="https://img.youtube.com/vi/QTPDKme_SHw/hqdefault.jpg" alt="Emotion-structuring sLLM demo"><span class="play">▶</span></a>
-        <div class="cap"><b>Emotion-structuring sLLM</b> — reasoning over outputs<span class="u">▶ youtu.be/QTPDKme_SHw</span></div>
+        <div class="cap"><b>Emotion-structuring sLLM</b> — LLM layer reasoning over recognition outputs<span class="u">▶ youtu.be/QTPDKme_SHw</span></div>
       </div>
+    </div>
+    <div class="vids" style="margin-top:16px">
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/AF_blvEkPCA"><img src="https://img.youtube.com/vi/AF_blvEkPCA/hqdefault.jpg" alt="GPU + FPGA real-time processing demo"><span class="play">▶</span></a>
-        <div class="cap"><b>GPU + FPGA processing</b> — inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
+        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
+      </div>
+      <div class="vid" style="background:#fff;display:flex;flex-direction:column;justify-content:center;padding:20px 22px">
+        <div style="font-family:'Inter';font-size:11px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;color:var(--accent2);margin-bottom:10px">What runs in these demos</div>
+        <div style="font-size:14px;line-height:2"><b style="color:var(--ink)">6 emotions + 4 states</b>, recognized in real time<br><b style="color:var(--ink)">Fully on-device</b> — capture to HMI response, zero cloud<br><b style="color:var(--ink)">AVN / HMI-linked</b> output in the vehicle<br>Face · voice · wearable biosignal fusion<br>Jetson Orin NX → AGX Thor · TensorRT</div>
+        <a href="https://ryanahn533.github.io/#demos" style="margin-top:14px;align-self:flex-start;font-size:12.5px;font-weight:700;color:#fff;background:var(--accent);border:1px solid var(--accent);padding:6px 14px;border-radius:7px;text-decoration:none">▶ All demos — ryanahn533.github.io</a>
       </div>
     </div>
-    <div class="gh" style="margin-top:24px">② Data Campaign — CARLA scenario reproduction</div>
-    <div class="vids">
-      <div class="vid">
-        <a class="vthumb carla" href="https://youtu.be/FeNp8itEtR0"><img src="https://img.youtube.com/vi/FeNp8itEtR0/hqdefault.jpg" alt="CARLA fear scenario reproduction"><span class="play">▶</span></a>
-        <div class="cap"><b>CARLA scenario reproduction — fear</b> — emotion-elicitation scenario, rebuilt & quality-verified<span class="u">▶ youtu.be/FeNp8itEtR0</span></div>
-      </div>
-      <div class="vid">
-        <a class="vthumb carla" href="https://youtu.be/eDrfvrU36-o"><img src="https://img.youtube.com/vi/eDrfvrU36-o/hqdefault.jpg" alt="CARLA anger scenario reproduction"><span class="play">▶</span></a>
-        <div class="cap"><b>CARLA scenario reproduction — anger</b> — emotion-elicitation scenario, rebuilt & quality-verified<span class="u">▶ youtu.be/eDrfvrU36-o</span></div>
-      </div>
-    </div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:24px">
-      <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">6 emotions + 4 states, real time</span>
-      <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">Fully on-device — zero cloud</span>
-      <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">AVN / HMI-linked output</span>
-      <a href="https://ryanahn533.github.io/#demos" style="font-size:12px;font-weight:700;color:#fff;background:var(--accent);border:1px solid var(--accent);padding:4px 12px;border-radius:6px;text-decoration:none">▶ More demos — ryanahn533.github.io</a>
     </div>
   </section>
 
-  <section style="padding-top:0">
+  <section id="datacamp" style="padding-top:0">
     <div class="gh">② Data Campaign — training-data pipeline</div>
     <div class="grid">
 
@@ -344,6 +337,16 @@
         </div>
       </div>
 
+    </div>
+    <div class="vids" style="margin-top:16px">
+      <div class="vid">
+        <a class="vthumb carla" href="https://youtu.be/FeNp8itEtR0"><img src="https://img.youtube.com/vi/FeNp8itEtR0/hqdefault.jpg" alt="CARLA fear scenario reproduction"><span class="play">▶</span></a>
+        <div class="cap"><b>CARLA scenario reproduction — fear</b> — emotion-elicitation driving scenario, rebuilt & quality-verified<span class="u">▶ youtu.be/FeNp8itEtR0</span></div>
+      </div>
+      <div class="vid">
+        <a class="vthumb carla" href="https://youtu.be/eDrfvrU36-o"><img src="https://img.youtube.com/vi/eDrfvrU36-o/hqdefault.jpg" alt="CARLA anger scenario reproduction"><span class="play">▶</span></a>
+        <div class="cap"><b>CARLA scenario reproduction — anger</b> — emotion-elicitation driving scenario, rebuilt & quality-verified<span class="u">▶ youtu.be/eDrfvrU36-o</span></div>
+      </div>
     </div>
     <div class="gh">③ Hyundai Motor · Kia — joint research</div>
     <div class="grid">
