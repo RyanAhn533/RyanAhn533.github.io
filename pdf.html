@@ -284,10 +284,10 @@
         <div class="bd">
           <div class="k">MOTIE ₩4.12B National R&D · 6-org consortium led by Sejong Univ. · Flagship</div>
           <h3>Real-time driver emotion & state recognition <span style="font-weight:400;color:var(--sub)">— on-device (K-MER)</span></h3>
-          <div class="role">My role — recognition architecture · model training & evaluation · <b>Jetson inference optimization (Orin NX → AGX Thor)</b> · in-vehicle integration</div>
+          <div class="role">My role — recognition architecture · model training & evaluation · <b>Jetson AGX Thor inference optimization</b> · in-vehicle integration</div>
           <div class="specs"><b>Recognition</b><span>Face · voice · wearable bio — <b>6 emotions + 4 states</b>, real time</span><b>On-device</b><span>Capture to HMI response, <b>fully on Jetson — zero cloud</b></span><b>Next</b><span>On-device sLLM decision layer, evolving into <b>Agentic DMS</b></span></div>
           <a class="demobtn" href="#demos">▶ Watch in-vehicle demos</a>
-          <div class="mtr"><span>Jetson Orin NX → AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
+          <div class="mtr"><span>NVIDIA Jetson AGX Thor</span><span>TensorRT</span><span>Vision + Audio + Bio</span></div>
           <div class="chips"><span>Jetson</span><span>TensorRT</span><span>On-device Edge AI</span><span>PyTorch</span><span>Wearable Biosignal</span><span>Multimodal Fusion</span></div>
         </div>
       </div>
@@ -295,25 +295,25 @@
     </div>
 
     <div id="demos">
-    <div class="gh">① MOTIE National R&D — live demos <span style="font-weight:600;text-transform:none;letter-spacing:0;color:var(--sub);font-size:12.5px">· click any thumbnail to watch</span></div>
+    <div class="gh">① MOTIE National R&D — live demos <span style="font-weight:600;text-transform:none;letter-spacing:0;color:var(--sub);font-size:12.5px">· running on Jetson AGX Thor unless noted · click any thumbnail to watch</span></div>
     <div class="vids">
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg" style="aspect-ratio:4/3" alt="In-vehicle hazard-response demo — water splash"><span class="play">▶</span></a>
-        <div class="cap"><b>In-vehicle hazard demo — water splash</b> — driver state recognized in real time while driving<a class="u" href="https://youtu.be/GNx7Ut8AUhU">▶ youtu.be/GNx7Ut8AUhU</a></div>
+        <div class="cap"><b>In-vehicle hazard demo — water splash</b> — driver state recognized in real time while driving · Jetson AGX Thor<a class="u" href="https://youtu.be/GNx7Ut8AUhU">▶ youtu.be/GNx7Ut8AUhU</a></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/U4qu2IIXH4E"><img src="https://img.youtube.com/vi/U4qu2IIXH4E/hqdefault.jpg" style="aspect-ratio:4/3" alt="In-vehicle hazard-response demo — glare"><span class="play">▶</span></a>
-        <div class="cap"><b>In-vehicle hazard demo — glare</b> — hazard induced while driving, on video<a class="u" href="https://youtu.be/U4qu2IIXH4E">▶ youtu.be/U4qu2IIXH4E</a></div>
+        <div class="cap"><b>In-vehicle hazard demo — glare</b> — hazard induced while driving · Jetson AGX Thor<a class="u" href="https://youtu.be/U4qu2IIXH4E">▶ youtu.be/U4qu2IIXH4E</a></div>
       </div>
     </div>
     <div class="vids" style="margin-top:16px">
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/QTPDKme_SHw"><img src="https://img.youtube.com/vi/QTPDKme_SHw/hqdefault.jpg" alt="Emotion-structuring sLLM demo"><span class="play">▶</span></a>
-        <div class="cap"><b>Emotion-structuring sLLM</b> — LLM layer reasoning over recognition outputs<a class="u" href="https://youtu.be/QTPDKme_SHw">▶ youtu.be/QTPDKme_SHw</a></div>
+        <div class="cap"><b>Emotion-structuring sLLM</b> — LLM layer reasoning over recognition outputs · Jetson AGX Thor<a class="u" href="https://youtu.be/QTPDKme_SHw">▶ youtu.be/QTPDKme_SHw</a></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/AF_blvEkPCA"><img src="https://img.youtube.com/vi/AF_blvEkPCA/hqdefault.jpg" alt="GPU + FPGA real-time processing demo"><span class="play">▶</span></a>
-        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured<a class="u" href="https://youtu.be/AF_blvEkPCA">▶ youtu.be/AF_blvEkPCA</a></div>
+        <div class="cap"><b>GPU + FPGA real-time processing</b> — inference speed measured on a separate GPU + FPGA setup (not Jetson)<a class="u" href="https://youtu.be/AF_blvEkPCA">▶ youtu.be/AF_blvEkPCA</a></div>
       </div>
     </div>
     <div class="gh">② Data Campaign — CARLA scenario reproduction</div>
@@ -343,9 +343,9 @@
           <div class="k">Data Infrastructure · training-data pipeline for the MOTIE & Hyundai projects</div>
           <h3>144-participant driving-simulator data campaign <span style="font-weight:400;color:var(--sub)">— sensing & validation pipeline (sensing-collector)</span></h3>
           <div class="role">My role — multimodal sensing architecture · time synchronization · deployment · quality validation</div>
-          <div class="specs"><b>Modalities</b><span>Face · voice · PPG · EDA · skin temperature · driving signals</span><b>Pipeline</b><span>Collection · synchronization · storage · validation · <b>quality-graded release</b></span><b>QA</b><span>File & device-log analysis · <b>24 alignment methods evaluated</b> · duplicated biosignal files detected and isolated</span><b>Recovery</b><span><b>186 proprietary binary sessions decoded and converted</b> through storage-structure analysis</span><b>Yield</b><span><b>144 participants · 132 valid driving sessions</b> · 519 emotion events · <b>87-person unified dataset</b></span><b>Release</b><span>Per-signal alignment grade & provenance documented for downstream analysis</span></div>
+          <div class="specs"><b>Modalities</b><span>Face · voice · PPG · EDA · skin temperature · driving signals — synchronized on <b>Jetson Orin NX</b></span><b>Pipeline</b><span>Collection · synchronization · storage · validation · <b>quality-graded release</b></span><b>QA</b><span>File & device-log analysis · <b>24 alignment methods evaluated</b> · duplicated biosignal files detected and isolated</span><b>Recovery</b><span><b>186 proprietary binary sessions decoded and converted</b> through storage-structure analysis</span><b>Yield</b><span><b>144 participants · 132 valid driving sessions</b> · 519 emotion events · <b>87-person unified dataset</b></span><b>Release</b><span>Per-signal alignment grade & provenance documented for downstream analysis</span></div>
           <div class="mtr"><span>144 participants · 1TB+</span><span>Quality-graded release</span><a href="https://github.com/RyanAhn533/sensing-collector" target="_blank" style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:6px;text-decoration:none">Code ↗</a></div>
-          <div class="chips"><span>Hardware Sync</span><span>Jetson</span><span>BLE Wearable</span><span>Data Engineering</span><span>Quality Validation</span></div>
+          <div class="chips"><span>Hardware Sync</span><span>Jetson Orin NX</span><span>BLE Wearable</span><span>Data Engineering</span><span>Quality Validation</span></div>
         </div>
       </div>
 
