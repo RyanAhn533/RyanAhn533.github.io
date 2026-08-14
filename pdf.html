@@ -180,8 +180,14 @@
   .vid .cap .u{display:block;font-size:11.5px;color:var(--accent2);margin-top:2px}
   .lbadge{position:absolute;right:8px;bottom:8px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.4px;color:#fff;background:rgba(31,58,95,.92);padding:3px 8px;border-radius:5px}
   #demos,#research,#eco{break-before:page;page-break-before:always}
-  #demos .vids{grid-template-columns:1fr 1fr 1fr}
-  #demos .vids .cap{font-size:12px;padding:8px 11px}
+  #demos .vthumb img{aspect-ratio:4/3}
+  #demos .vids{gap:24px}
+  #demos .vthumb{overflow:hidden}
+  #demos .vids .vid:nth-child(3) .vthumb img,#demos .vids .vid:nth-child(4) .vthumb img{transform:scale(1.335)}
+  #demos .vid .cap{font-size:13.5px;padding:11px 14px}
+  #demos{padding:22px 0 10px;height:1400px;box-sizing:border-box;display:flex;flex-direction:column}
+  #demos .vids{margin:auto 0}
+  #demos .vthumb img{aspect-ratio:5/4}
   #demos,#research,#eco{padding-top:14px}
   #research{zoom:.86}
   footer{margin:18px 0 0;padding-top:14px;break-inside:avoid;page-break-inside:avoid}
@@ -271,24 +277,24 @@
     <h2 class="sec">Live Demos</h2>
     <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle demos</b>, on video — <b>click any thumbnail to watch</b> (links are live in this PDF)</p>
     <div class="vids">
-      <div class="vid" style="grid-column:1/-1">
-        <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg'" alt="In-vehicle hazard-response demo — water splash"><span class="play">▶</span></a>
-        <div class="cap" style="font-size:13px;padding:10px 14px"><b>In-vehicle hazard-response demo — water splash</b> — driver state recognized in real time while driving<span class="u">▶ youtu.be/GNx7Ut8AUhU</span></div>
+      <div class="vid">
+        <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg" alt="In-vehicle hazard-response demo — water splash"><span class="play">▶</span></a>
+        <div class="cap"><b>In-vehicle hazard-response demo — water splash</b> — driver state recognized in real time while driving<span class="u">▶ youtu.be/GNx7Ut8AUhU</span></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/U4qu2IIXH4E"><img src="https://img.youtube.com/vi/U4qu2IIXH4E/hqdefault.jpg" alt="In-vehicle hazard-response demo — glare"><span class="play">▶</span></a>
-        <div class="cap"><b>In-vehicle demo — glare</b> — hazard induced while driving<span class="u">▶ youtu.be/U4qu2IIXH4E</span></div>
+        <div class="cap"><b>In-vehicle hazard-response demo — glare</b> — hazard induced while driving, on video<span class="u">▶ youtu.be/U4qu2IIXH4E</span></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/SIep5uUI34Y"><img src="https://img.youtube.com/vi/SIep5uUI34Y/hqdefault.jpg" alt="Korean compound-emotion model demo"><span class="play">▶</span></a>
-        <div class="cap"><b>Compound-emotion model</b> — face · voice · bio fusion, live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
+        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/AF_blvEkPCA"><img src="https://img.youtube.com/vi/AF_blvEkPCA/hqdefault.jpg" alt="GPU + FPGA real-time processing demo"><span class="play">▶</span></a>
-        <div class="cap"><b>GPU + FPGA processing</b> — on-device inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
+        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
       </div>
     </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:36px">
       <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">6 emotions + 4 states, real time</span>
       <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">Fully on-device — zero cloud</span>
       <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">AVN / HMI-linked output</span>
