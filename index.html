@@ -57,6 +57,9 @@
   section{padding:40px 0 6px}
   h2.sec{font-size:15px;font-family:'Inter';font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sub);margin-bottom:20px;display:flex;align-items:center;gap:12px}
   h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+  .gh{font-size:12.5px;font-family:'Inter';font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin:22px 0 12px;display:flex;align-items:center;gap:10px}
+  .gh:first-of-type{margin-top:0}
+  .gh::after{content:"";flex:1;height:1px;background:var(--line)}
   .lead{font-size:16px;color:var(--body)}
   .lead b{color:var(--ink);font-weight:600}
   /* projects */
@@ -209,7 +212,8 @@
   </section>
 
   <section id="work">
-    <h2 class="sec">Selected Work</h2>
+    <h2 class="sec">Projects</h2>
+    <div class="gh">① MOTIE National R&D · ₩4.12B — flagship</div>
     <div class="grid">
 
       <div class="card feat" style="grid-template-columns:1fr">
@@ -234,7 +238,8 @@
 
   <section id="demos">
     <h2 class="sec">Live Demos</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle demos</b>, on video</p>
+    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems, grouped by project — on video</p>
+    <div style="font-size:13px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin:4px 0 12px;display:flex;align-items:center;gap:10px">① MOTIE National R&D — in-vehicle & on-device<span style="flex:1;height:1px;background:var(--line)"></span></div>
     <div class="vids">
       <div class="vid" style="grid-column:1/-1">
         <iframe src="https://www.youtube-nocookie.com/embed/GNx7Ut8AUhU" title="차량 실증 — 시야저하·물세례" allowfullscreen loading="lazy"></iframe>
@@ -257,9 +262,21 @@
         <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured</div>
       </div>
     </div>
+    <div style="font-size:13px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin:26px 0 12px;display:flex;align-items:center;gap:10px">② Data Campaign — CARLA scenario reproduction<span style="flex:1;height:1px;background:var(--line)"></span></div>
+    <div class="vids">
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/FeNp8itEtR0" title="CARLA 공포 시나리오 재현" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>CARLA scenario reproduction — fear</b> — emotion-elicitation driving scenario, rebuilt & quality-verified in CARLA</div>
+      </div>
+      <div class="vid">
+        <iframe src="https://www.youtube-nocookie.com/embed/eDrfvrU36-o" title="CARLA 분노 시나리오 재현" allowfullscreen loading="lazy"></iframe>
+        <div class="cap"><b>CARLA scenario reproduction — anger</b> — emotion-elicitation driving scenario, rebuilt & quality-verified in CARLA</div>
+      </div>
+    </div>
   </section>
 
   <section style="padding-top:0">
+    <div class="gh">② Data Campaign — training-data pipeline</div>
     <div class="grid">
 
       <div class="card feat" style="grid-template-columns:1fr">
@@ -277,6 +294,10 @@
         </div>
       </div>
 
+    </div>
+    <div class="gh">③ Hyundai Motor · Kia — joint research</div>
+    <div class="grid">
+
       <div class="card feat">
         <div class="cov" style="background:#f5f7fa url('assets/hyundai_logo.png') center/68% no-repeat"><span class="demo" style="background:rgba(0,44,95,.9);border-color:rgba(0,44,95,.9)">JOINT RESEARCH</span></div>
         <div class="bd">
@@ -288,6 +309,10 @@
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
       </div>
+
+    </div>
+    <div class="gh">④ Seoul RISE · Products & Social Impact</div>
+    <div class="grid">
 
       <div class="card feat">
         <div class="cov" style="background:#fff url('assets/rise_visual.jpg') center/contain no-repeat"><span class="demo" style="background:rgba(31,58,95,.88);border-color:rgba(31,58,95,.9)">DEPLOYED</span></div>

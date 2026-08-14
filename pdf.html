@@ -57,6 +57,9 @@
   section{padding:40px 0 6px}
   h2.sec{font-size:15px;font-family:'Inter';font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sub);margin-bottom:20px;display:flex;align-items:center;gap:12px}
   h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+  .gh{font-size:12.5px;font-family:'Inter';font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin:22px 0 12px;display:flex;align-items:center;gap:10px}
+  .gh:first-of-type{margin-top:0}
+  .gh::after{content:"";flex:1;height:1px;background:var(--line)}
   .lead{font-size:16px;color:var(--body)}
   .lead b{color:var(--ink);font-weight:600}
   /* projects */
@@ -158,7 +161,7 @@
   @media(max-width:680px){.hero{grid-template-columns:1fr}.pfp{order:-1;width:96px;height:96px}.metrics{grid-template-columns:1fr 1fr}.grid,.beyond{grid-template-columns:1fr}nav .mu{display:none}.card.feat{grid-template-columns:1fr}.card.feat .cov{min-height:180px}}
   /* ===== PDF version overrides ===== */
   @page{size:A4;margin:9mm 8mm}
-  body{zoom:.72}
+  body{zoom:.66}
   nav,.note{display:none}
   html{scroll-behavior:auto}
   .hero{padding:10px 0 6px}
@@ -180,16 +183,17 @@
   .vid .cap .u{display:block;font-size:11.5px;color:var(--accent2);margin-top:2px}
   .lbadge{position:absolute;right:8px;bottom:8px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.4px;color:#fff;background:rgba(31,58,95,.92);padding:3px 8px;border-radius:5px}
   #demos,#research,#eco{break-before:page;page-break-before:always}
-  #demos .vthumb img{aspect-ratio:4/3}
-  #demos .vids{gap:24px}
+  .gh{break-after:avoid;page-break-after:avoid}
+  #demos{padding:14px 0 0}
+  #demos .vids{gap:18px}
   #demos .vthumb{overflow:hidden}
-  #demos .vids .vid:nth-child(3) .vthumb img,#demos .vids .vid:nth-child(4) .vthumb img{transform:scale(1.335)}
-  #demos .vid .cap{font-size:13.5px;padding:11px 14px}
-  #demos{padding:22px 0 10px;height:1400px;box-sizing:border-box;display:flex;flex-direction:column}
-  #demos .vids{margin:auto 0}
-  #demos .vthumb img{aspect-ratio:5/4}
+  #demos .vid .cap{font-size:12.5px;padding:9px 12px}
+  #demos .gh{font-size:12.5px;font-family:'Inter';font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin:18px 0 10px;display:flex;align-items:center;gap:10px}
+  #demos .gh::after{content:"";flex:1;height:1px;background:var(--line)}
+  #demos .carla img{transform:scale(1.34)}
   #demos,#research,#eco{padding-top:14px}
-  #research{zoom:.86}
+  #research{zoom:.92}
+  #demos{zoom:.96}
   footer{margin:18px 0 0;padding-top:14px;break-inside:avoid;page-break-inside:avoid}
   footer .cr{margin-top:10px}
 </style>
@@ -250,7 +254,8 @@
   </section>
 
   <section id="work">
-    <h2 class="sec">Selected Work</h2>
+    <h2 class="sec">Projects</h2>
+    <div class="gh">① MOTIE National R&D · ₩4.12B — flagship</div>
     <div class="grid">
 
       <div class="card feat" style="grid-template-columns:1fr">
@@ -275,26 +280,44 @@
 
   <section id="demos">
     <h2 class="sec">Live Demos</h2>
-    <p class="lead" style="font-size:14.5px;margin-bottom:18px">Not claims — running systems. From collection rig to <b>in-vehicle demos</b>, on video — <b>click any thumbnail to watch</b> (links are live in this PDF)</p>
+    <p class="lead" style="font-size:14.5px;margin-bottom:10px">Not claims — running systems, grouped by project — <b>click any thumbnail to watch</b> (links are live in this PDF)</p>
+    <div class="gh">① MOTIE National R&D — in-vehicle & on-device</div>
     <div class="vids">
       <div class="vid">
-        <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg" alt="In-vehicle hazard-response demo — water splash"><span class="play">▶</span></a>
-        <div class="cap"><b>In-vehicle hazard-response demo — water splash</b> — driver state recognized in real time while driving<span class="u">▶ youtu.be/GNx7Ut8AUhU</span></div>
+        <a class="vthumb" href="https://youtu.be/GNx7Ut8AUhU"><img src="https://img.youtube.com/vi/GNx7Ut8AUhU/hqdefault.jpg" style="aspect-ratio:4/3" alt="In-vehicle hazard-response demo — water splash"><span class="play">▶</span></a>
+        <div class="cap"><b>In-vehicle hazard demo — water splash</b> — driver state recognized in real time while driving<span class="u">▶ youtu.be/GNx7Ut8AUhU</span></div>
       </div>
       <div class="vid">
-        <a class="vthumb" href="https://youtu.be/U4qu2IIXH4E"><img src="https://img.youtube.com/vi/U4qu2IIXH4E/hqdefault.jpg" alt="In-vehicle hazard-response demo — glare"><span class="play">▶</span></a>
-        <div class="cap"><b>In-vehicle hazard-response demo — glare</b> — hazard induced while driving, on video<span class="u">▶ youtu.be/U4qu2IIXH4E</span></div>
+        <a class="vthumb" href="https://youtu.be/U4qu2IIXH4E"><img src="https://img.youtube.com/vi/U4qu2IIXH4E/hqdefault.jpg" style="aspect-ratio:4/3" alt="In-vehicle hazard-response demo — glare"><span class="play">▶</span></a>
+        <div class="cap"><b>In-vehicle hazard demo — glare</b> — hazard induced while driving, on video<span class="u">▶ youtu.be/U4qu2IIXH4E</span></div>
       </div>
+    </div>
+    <div class="vids" style="grid-template-columns:1fr 1fr 1fr;margin-top:18px">
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/SIep5uUI34Y"><img src="https://img.youtube.com/vi/SIep5uUI34Y/hqdefault.jpg" alt="Korean compound-emotion model demo"><span class="play">▶</span></a>
-        <div class="cap"><b>Korean compound-emotion model</b> — face · voice · bio fusion, running live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
+        <div class="cap"><b>Compound-emotion model</b> — face · voice · bio, live<span class="u">▶ youtu.be/SIep5uUI34Y</span></div>
+      </div>
+      <div class="vid">
+        <a class="vthumb" href="https://youtu.be/QTPDKme_SHw"><img src="https://img.youtube.com/vi/QTPDKme_SHw/hqdefault.jpg" alt="Emotion-structuring sLLM demo"><span class="play">▶</span></a>
+        <div class="cap"><b>Emotion-structuring sLLM</b> — reasoning over outputs<span class="u">▶ youtu.be/QTPDKme_SHw</span></div>
       </div>
       <div class="vid">
         <a class="vthumb" href="https://youtu.be/AF_blvEkPCA"><img src="https://img.youtube.com/vi/AF_blvEkPCA/hqdefault.jpg" alt="GPU + FPGA real-time processing demo"><span class="play">▶</span></a>
-        <div class="cap"><b>GPU + FPGA real-time processing</b> — on-device inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
+        <div class="cap"><b>GPU + FPGA processing</b> — inference speed, measured<span class="u">▶ youtu.be/AF_blvEkPCA</span></div>
       </div>
     </div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:36px">
+    <div class="gh" style="margin-top:24px">② Data Campaign — CARLA scenario reproduction</div>
+    <div class="vids">
+      <div class="vid">
+        <a class="vthumb carla" href="https://youtu.be/FeNp8itEtR0"><img src="https://img.youtube.com/vi/FeNp8itEtR0/hqdefault.jpg" alt="CARLA fear scenario reproduction"><span class="play">▶</span></a>
+        <div class="cap"><b>CARLA scenario reproduction — fear</b> — emotion-elicitation scenario, rebuilt & quality-verified<span class="u">▶ youtu.be/FeNp8itEtR0</span></div>
+      </div>
+      <div class="vid">
+        <a class="vthumb carla" href="https://youtu.be/eDrfvrU36-o"><img src="https://img.youtube.com/vi/eDrfvrU36-o/hqdefault.jpg" alt="CARLA anger scenario reproduction"><span class="play">▶</span></a>
+        <div class="cap"><b>CARLA scenario reproduction — anger</b> — emotion-elicitation scenario, rebuilt & quality-verified<span class="u">▶ youtu.be/eDrfvrU36-o</span></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:24px">
       <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">6 emotions + 4 states, real time</span>
       <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">Fully on-device — zero cloud</span>
       <span style="font-size:12px;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:6px">AVN / HMI-linked output</span>
@@ -303,6 +326,7 @@
   </section>
 
   <section style="padding-top:0">
+    <div class="gh">② Data Campaign — training-data pipeline</div>
     <div class="grid">
 
       <div class="card feat" style="grid-template-columns:1fr">
@@ -320,6 +344,10 @@
         </div>
       </div>
 
+    </div>
+    <div class="gh">③ Hyundai Motor · Kia — joint research</div>
+    <div class="grid">
+
       <div class="card feat">
         <div class="cov" style="background:#f5f7fa url('assets/hyundai_logo.png') center/68% no-repeat"><span class="demo" style="background:rgba(0,44,95,.9);border-color:rgba(0,44,95,.9)">JOINT RESEARCH</span></div>
         <div class="bd">
@@ -331,6 +359,10 @@
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
       </div>
+
+    </div>
+    <div class="gh">④ Seoul RISE · Products & Social Impact</div>
+    <div class="grid">
 
       <div class="card feat">
         <div class="cov" style="background:#fff url('assets/rise_visual.jpg') center/contain no-repeat"><span class="demo" style="background:rgba(31,58,95,.88);border-color:rgba(31,58,95,.9)">DEPLOYED</span></div>
