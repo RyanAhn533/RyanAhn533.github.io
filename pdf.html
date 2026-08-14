@@ -359,8 +359,8 @@
           <div class="k">Hyundai Motor Company · Kia — 2026 Future Technology Program, joint research</div>
           <h3>Driver emotion care & safe-driving intervention, on a production vehicle <span style="font-weight:400;color:var(--sub)">— Affective Care Drive</span></h3>
           <div class="role">My role — multimodal risk model · HMI intervention pipeline · ST1 integration</div>
-          <div class="specs"><b>Track</b><span>Vehicle application of the national R&D platform — <b>system installed on Hyundai ST1</b></span><b>Model</b><span><b>Frustration-hub emotion model</b> — compound-emotion transitions</span><b>Pipeline</b><span>6-modality <b>Driver Risk Index</b> · 3-stage HMI intervention</span><b>Status</b><span>Model architecture & ST1 integration <b>presented at the interim review</b> · Jetson AGX Thor</span><b>Next</b><span>Driving validation planned at <b>Namyang Proving Ground</b></span></div>
-          <div class="mtr"><span>Hyundai ST1</span><span>Jetson AGX Thor</span><span>Namyang validation planned</span></div>
+          <div class="specs"><b>Track</b><span>Vehicle application of the national R&D platform — <b>system installed on Hyundai ST1</b></span><b>Model</b><span><b>Frustration-hub emotion model</b> — compound-emotion transitions</span><b>Pipeline</b><span>6-modality <b>Driver Risk Index</b> · 3-stage HMI intervention</span><b>Status</b><span>Model architecture & ST1 integration <b>presented at the interim review</b> · Jetson AGX Thor</span><b>Next</b><span>Driving validation planned on the proving ground at <b>Hyundai's Namyang R&D Center</b></span></div>
+          <div class="mtr"><span>Hyundai ST1</span><span>Jetson AGX Thor</span><span>Namyang R&D Center — validation planned</span></div>
           <div class="chips"><span>Frustration Hub Model</span><span>6-Modal Fusion</span><span>Driver Risk Index</span><span>HMI Intervention</span><span>On-device Edge AI</span></div>
         </div>
       </div>
@@ -438,8 +438,8 @@
           <div class="k">Research · SCIE Published (MDPI Mathematics)</div>
           <h3>Multimodal emotion recognition <span style="font-weight:400;color:var(--sub)">— bio · voice · face fusion (S-PACE)</span></h3>
           <div class="role">My role — first author · method design · all experiments</div>
-          <div class="specs"><b>Alignment</b><span>Behavioral–physiological time lag, <b>cross-modal alignment</b></span><b>Gating</b><span><b>Quality-aware gating</b> — per-modality confidence</span><b>Legacy</b><span>Label collapse finding seeded the causal follow-up, <b>CBBF</b></span></div>
-          <div class="mtr"><span>SCIE · Q1</span><span>Valence 93.32%</span><span>1st author</span></div>
+          <div class="specs"><b>Alignment</b><span>Behavioral–physiological time lag, <b>cross-modal alignment</b></span><b>Gating</b><span><b>Quality-aware gating</b> — per-modality confidence</span><b>Legacy</b><span>Found the benchmark's <b>valence labels collapse</b> under class imbalance — my own follow-up (<b>CBBF</b>) attacks it</span></div>
+          <div class="mtr"><span>SCIE published</span><span>Arousal F1 73.24%</span><span>1st author</span></div>
           <div class="chips"><span>K-EmoCon</span><span>Cross-attention</span><span>Perceiver</span><span>PyTorch</span></div>
         </div>
       </div>
@@ -474,8 +474,8 @@
           <div class="k">Research · Causal Multimodal Fusion · submission in preparation</div>
           <h3>Causal bio-behavioral fusion <span style="font-weight:400;color:var(--sub)">— (CBBF)</span></h3>
           <div class="role">My role — solo research, design to manuscript</div>
-          <div class="specs"><b>Causality</b><span><b>Physiology precedes expression</b> — attention respects the lag</span><b>Timing</b><span>ANS 0.5–2s · face 1–3s · voice 2–5s — <b>causal chain</b></span><b>Method</b><span>Bio-anchored conditioning + FiLM</span><b>Status</b><span>Manuscript in final stage — submission planned to <b>Knowledge-Based Systems (KBS)</b></span></div>
-          <div class="mtr"><span>Bio-anchored Attention</span></div>
+          <div class="specs"><b>Causality</b><span><b>Physiology precedes expression</b> — attention respects the lag</span><b>Timing</b><span>ANS 0.5–2s · face 1–3s · voice 2–5s — <b>causal chain</b></span><b>Method</b><span>Bio-anchored conditioning + FiLM</span><b>Motivation</b><span>Fixes the <b>imbalanced-label protocol</b> I found while writing S-PACE — evaluated on imbalance-robust metrics</span><b>Status</b><span>Manuscript in final stage — submission planned to <b>Knowledge-Based Systems (KBS)</b></span></div>
+          <div class="mtr"><span>Bio-anchored Attention</span><span>Imbalance-robust evaluation</span></div>
           <div class="chips"><span>Causal Fusion</span><span>Cross-attention</span><span>FiLM</span><span>K-EmoCon · DEAP</span></div>
         </div>
       </div>
@@ -525,7 +525,7 @@
         <div class="t">SGMT with S-PACE: A Framework for Temporal Alignment and Quality-Aware Multimodal Fusion in Emotion Recognition</div>
         <div class="a"><u>Jun-Young Ahn</u>, Sathiyamoorthi Arthanari, Sathishkumar Moorthy, Yeon-Kug Moon · Sejong University</div>
         <div class="a" style="color:var(--sub);font-style:italic">Mathematics 2026, 14(10), 1743 · MDPI · SCIE · JCR Q1 (Mathematics) — at publication and in the current JCR release</div>
-        <div class="results">K-EmoCon: Valence Acc <b>93.32%</b> · Arousal F1 <b>73.24%</b> · Quadrant <b>62.54%</b> &nbsp;|&nbsp; Behavioral cues as query, physiology as key — asymmetric cross-attention aligning their time lag</div>
+        <div class="results">K-EmoCon: Arousal F1 <b>73.24%</b> · 4-class Quadrant <b>62.54%</b> &nbsp;|&nbsp; Behavioral cues as query, physiology as key — asymmetric cross-attention aligning their time lag<br><span style="color:var(--sub)">Reported valence accuracy on this benchmark is inflated by heavy class imbalance — a limitation I identified in follow-up work, which is what CBBF is built to fix. Quoted here are the imbalance-robust metrics.</span></div>
         <div class="btns"><a class="pri" href="https://www.mdpi.com/2227-7390/14/10/1743/pdf" target="_blank">PDF</a><a href="https://doi.org/10.3390/math14101743" target="_blank">DOI</a><a href="https://www.mdpi.com/2227-7390/14/10/1743" target="_blank">HTML</a><a href="https://github.com/RyanAhn533/S-PACE-multimodal-emotion-recognition" target="_blank">Code</a></div>
       </div>
     </div>
