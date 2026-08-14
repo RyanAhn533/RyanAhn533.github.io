@@ -182,10 +182,12 @@
   .vthumb .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:40px;background:rgba(0,0,0,.78);color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;padding-left:3px}
   .vid .cap .u{display:block;font-size:11.5px;color:var(--accent2);margin-top:2px}
   .lbadge{position:absolute;right:8px;bottom:8px;font-family:'Inter';font-size:10px;font-weight:700;letter-spacing:.4px;color:#fff;background:rgba(31,58,95,.92);padding:3px 8px;border-radius:5px}
-  #demos,#datacamp{break-before:page;page-break-before:always}
+  #demos,#datacamp,#products,#research,#eco,#patents{break-before:page;page-break-before:always}
   .gh{break-after:avoid;page-break-after:avoid}
-  h2.sec{font-size:19px;letter-spacing:2px;margin-bottom:16px}
-  .gh{font-size:15px;letter-spacing:1px}
+  h2.sec{font-size:24px;letter-spacing:2px;color:var(--ink);font-weight:800;margin-bottom:18px}
+  h2.sec::after{background:var(--ink);opacity:.25}
+  .gh{font-size:17px;letter-spacing:.6px;color:var(--accent);font-weight:800}
+  .gh::after{background:var(--accent);opacity:.3}
   #demos{padding:14px 0 0}
   #demos .vids{gap:18px}
   #demos .vthumb{overflow:hidden}
@@ -196,6 +198,10 @@
   #demos,#research,#eco{padding-top:14px}
   #research{zoom:.92}
   #demos{zoom:1.32;padding-top:0}
+  #datacamp,#products,#eco,#patents{padding-top:14px}
+  #exp,#beyond{padding-top:30px}
+  #patents{zoom:1.14}
+  #pub{padding-top:26px}
   #demos .gh{margin:14px 0 12px}
   #demos .vthumb img{aspect-ratio:4/3}
   #demos .vids{gap:16px}
@@ -354,6 +360,9 @@
       </div>
 
     </div>
+  </section>
+
+  <section id="products" style="padding-top:14px">
     <div class="gh">④ Seoul RISE · Products & Social Impact</div>
     <div class="grid">
 
